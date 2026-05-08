@@ -71,7 +71,7 @@ function PortfolioContent() {
         {/* Footer */}
         <footer className="mt-12 md:mt-16 text-center">
           <p className="text-xs text-muted-foreground font-mono">
-            <span className="text-primary">©</span> 2024 Matias Asin
+            <span className="text-primary">©</span> 2026 Matias Asin
             <span className="mx-2 text-border">|</span>
             <span className="text-secondary">{"</"}</span>
             {t("Built with passion", "Hecho con pasión")}

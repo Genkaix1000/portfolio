@@ -1,11 +1,14 @@
 "use client";
 
 import { TerminalWindow } from "../terminal-window";
+import { useLanguage } from "@/contexts/language-context";
 
 export function PortraitConsole() {
+  const { t } = useLanguage();
+
   return (
     <TerminalWindow
-      title="PERFIL"
+      title={t("PROFILE", "PERFIL")}
       subtitle="profile.jpg"
       variant="portrait"
     >
@@ -29,7 +32,7 @@ export function PortraitConsole() {
         
         <div className="mt-4 text-center">
           <div className="text-[10px] text-muted-foreground font-mono">
-            <span className="text-primary">status:</span> available
+            <span className="text-primary">status:</span> {t("available", "disponible")}
           </div>
         </div>
       </div>
