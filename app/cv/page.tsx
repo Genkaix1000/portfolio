@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 
 /**
  * MATÍAS ASIN - PROFESSIONAL CV 
@@ -14,6 +15,19 @@ export default function CVPage() {
 
   return (
     <main className="min-h-screen bg-[#f8f9fa] text-neutral-800 selection:bg-indigo-100 selection:text-indigo-900 font-sans py-12 px-6 lg:py-20 print:py-0 print:px-0 print:bg-white">
+
+      {/* NAVIGATION - HIDDEN ON PRINT */}
+      <nav className="max-w-4xl mx-auto mb-8 print:hidden">
+        <Link 
+          href="/" 
+          className="group inline-flex items-center gap-2 px-4 py-2 text-xs font-black uppercase tracking-widest text-neutral-500 hover:text-neutral-900 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+          Back to Systems
+        </Link>
+      </nav>
 
       {/* SURGICAL PRINT OPTIMIZATION */}
       <style jsx global>{`

@@ -10,6 +10,7 @@ import { SkillsConsole } from "@/components/consoles/skills-console";
 import { ContactConsole } from "@/components/consoles/contact-console";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { LanguageProvider, useLanguage } from "@/contexts/language-context";
+import Link from "next/link";
 
 function PortfolioContent() {
   const { t } = useLanguage();
@@ -39,6 +40,33 @@ function PortfolioContent() {
               "Programador • Científico de Datos • Diseñador UX"
             )}
           </p>
+
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/cv"
+              className="group relative inline-flex items-center gap-3 px-8 py-3.5 font-mono text-sm font-bold text-foreground bg-card border border-border rounded-xl hover:border-primary/50 transition-all duration-300 shadow-xl active:scale-95"
+            >
+              <span className="text-primary animate-pulse">{">"}</span>
+              {t("View Full CV", "Ver CV Completo")}
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="16" 
+                height="16" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="text-primary group-hover:translate-x-1 transition-transform"
+              >
+                <path d="M5 12h14m-7-7 7 7-7 7"/>
+              </svg>
+              
+              {/* Subtle glow effect on hover */}
+              <div className="absolute inset-0 rounded-xl bg-primary/5 opacity-0 group-hover:opacity-100 blur-xl transition-opacity pointer-events-none" />
+            </Link>
+          </div>
         </header>
 
         {/* Bento Grid */}
