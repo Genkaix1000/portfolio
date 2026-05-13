@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matias Sasin | Programmer • Data Scientist • UX Designer",
+  title: "Matias Asin | Programmer • Data Scientist • UX Designer",
   description:
-    "Portfolio of Matias Sasin - Programmer, Data Scientist, and UX Designer from San Carlos de Bolívar, Argentina. Specializing in Flutter, Next.js, and data-driven development.",
+    "Portfolio of Matias Asin - Programmer, Data Scientist, and UX Designer from San Carlos de Bolívar, Argentina. Specializing in Flutter, Next.js, and data-driven development.",
 };
 
 export default function RootLayout({
