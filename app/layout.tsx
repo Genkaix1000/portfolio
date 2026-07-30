@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matias Asin | Programmer • Data Scientist • UX Designer",
+  title: "Matías Asin | Data & Software",
   description:
-    "Portfolio of Matias Asin - Programmer, Data Scientist, and UX Designer from San Carlos de Bolívar, Argentina. Specializing in Flutter, Next.js, and data-driven development.",
+    "Portfolio de Matías Asin — software, datos y sistemas digitales.",
 };
 
 export default function RootLayout({
@@ -25,10 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-background`}
+      lang="es"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
