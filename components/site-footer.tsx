@@ -60,6 +60,14 @@ export function SiteFooter() {
                 <span>{label}</span>
               </a>
             ))}
+            <a
+              href="/atelier"
+              className="footer-atelier"
+              aria-label="Atelier"
+              title="· · ·"
+            >
+              ◆
+            </a>
           </nav>
         </div>
       </div>
