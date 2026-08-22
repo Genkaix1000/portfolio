@@ -109,7 +109,7 @@ const es: Dict = {
     stackTitle: "Stack principal",
     stack: [
       { label: "Frontend", text: "React · Next.js · Flutter" },
-      { label: "Backend", text: "TypeScript · Java · SQL · Supabase" },
+      { label: "Backend", text: "TypeScript · Java · SQL · Postgres" },
       { label: "Pagos", text: "Mercado Pago Checkout Pro" },
       { label: "Data & Security", text: "Reporting · API audit · Pentest" },
     ],
@@ -118,15 +118,15 @@ const es: Dict = {
       {
         title: "Mercado Pago Checkout Pro",
         meta: "Certificación oficial · integración de cobros",
-        links: [{ href: "/cv/pdfs/checkout-pro.pdf", label: "Certificado ↗" }],
+        links: [{ href: "/certs/checkout-pro.pdf", label: "Certificado ↗" }],
       },
       {
         title: "Tecnicatura Sup. en Ciencia de Datos",
         meta: "Teclab — en curso · título intermedio",
         links: [
-          { href: "/cv/pdfs/constancia.pdf", label: "Constancia ↗" },
-          { href: "/cv/pdfs/intermedio.pdf", label: "Intermedio ↗" },
-          { href: "/cv/pdfs/analitico.pdf", label: "Analítico ↗" },
+          { href: "/certs/constancia.pdf", label: "Constancia ↗" },
+          { href: "/certs/intermedio.pdf", label: "Intermedio ↗" },
+          { href: "/certs/analitico.pdf", label: "Analítico ↗" },
         ],
       },
       {
@@ -167,7 +167,7 @@ const es: Dict = {
         name: "Bolívar Pide",
         status: "BETA",
         role: "Plataforma de delivery local",
-        stack: "Next.js · Supabase · PWA",
+        stack: "Next.js · Postgres · PWA",
         detail:
           "Marketplace de tres caras (usuario, negocio, repartidor) para Bolívar. En fase beta, aún no salió al público.",
         image: "/projects/bolivarpide.jpg",
@@ -229,7 +229,7 @@ const en: Dict = {
     stackTitle: "Main stack",
     stack: [
       { label: "Frontend", text: "React · Next.js · Flutter" },
-      { label: "Backend", text: "TypeScript · Java · SQL · Supabase" },
+      { label: "Backend", text: "TypeScript · Java · SQL · Postgres" },
       { label: "Payments", text: "Mercado Pago Checkout Pro" },
       { label: "Data & Security", text: "Reporting · API audit · Pentest" },
     ],
@@ -238,15 +238,15 @@ const en: Dict = {
       {
         title: "Mercado Pago Checkout Pro",
         meta: "Official certification · payment integration",
-        links: [{ href: "/cv/pdfs/checkout-pro.pdf", label: "Certificate ↗" }],
+        links: [{ href: "/certs/checkout-pro.pdf", label: "Certificate ↗" }],
       },
       {
         title: "Higher Technician in Data Science",
         meta: "Teclab — in progress · intermediate degree",
         links: [
-          { href: "/cv/pdfs/constancia.pdf", label: "Proof ↗" },
-          { href: "/cv/pdfs/intermedio.pdf", label: "Intermediate ↗" },
-          { href: "/cv/pdfs/analitico.pdf", label: "Transcript ↗" },
+          { href: "/certs/constancia.pdf", label: "Proof ↗" },
+          { href: "/certs/intermedio.pdf", label: "Intermediate ↗" },
+          { href: "/certs/analitico.pdf", label: "Transcript ↗" },
         ],
       },
       {
@@ -287,7 +287,7 @@ const en: Dict = {
         name: "Bolívar Pide",
         status: "BETA",
         role: "Local delivery platform",
-        stack: "Next.js · Supabase · PWA",
+        stack: "Next.js · Postgres · PWA",
         detail:
           "Three-sided marketplace (user, business, courier) for Bolívar. Still in beta; not public yet.",
         image: "/projects/bolivarpide.jpg",

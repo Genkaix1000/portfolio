@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 // Helper to get base64 of the image
-const imagePath = path.join(process.cwd(), 'public/cv/cv.png');
+const imagePath = path.join(process.cwd(), 'public/portrait.png');
 const imageBase64 = fs.readFileSync(imagePath).toString('base64');
 
 const cvData = {

@@ -4,7 +4,7 @@ export function CVGamePresenter() {
       <header className="cv-header cv-header-game">
         <div className="cv-photo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/cv/cv.png" alt="Matías Asin" />
+          <img src="/portrait.png" alt="Matías Asin" />
         </div>
 
         <div className="cv-header-main">

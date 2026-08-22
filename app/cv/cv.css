@@ -76,9 +76,119 @@
   padding: 18mm 16mm;
 }
 
-/* Game Presenter: denser one-page layout */
+/* Game Presenter / Studio IT: denser one-page layout */
 .cv-page-game {
-  padding: 12mm 12mm 10mm;
+  padding: 10mm 9mm 8mm;
+}
+
+.cv-page-studio {
+  --cv-ink: #111514;
+  --cv-accent: #6f8f7c;
+  --cv-accent-soft: #c5d4c8;
+  --cv-paper: #f4f3ed;
+  --cv-muted: #5a615c;
+  padding: 9mm 10mm 8mm;
+  background: var(--cv-paper);
+  color: var(--cv-ink);
+}
+
+.cv-page-studio .cv-photo {
+  border-color: var(--cv-ink);
+  box-shadow: 3px 3px 0 var(--cv-accent);
+  background: var(--cv-accent-soft);
+}
+
+.cv-page-studio .cv-photo img {
+  filter: none;
+}
+
+.cv-page-studio .cv-role {
+  color: var(--cv-accent);
+}
+
+.cv-page-studio .cv-tagline {
+  color: var(--cv-muted);
+}
+
+.cv-page-studio .cv-block h2,
+.cv-page-studio .cv-split h2 {
+  color: var(--cv-ink);
+  border-bottom-color: var(--cv-accent);
+}
+
+.cv-page-studio .cv-job + .cv-job {
+  border-top-color: color-mix(in srgb, var(--cv-accent) 35%, #e4e4de);
+}
+
+.cv-page-studio .cv-job-role {
+  color: var(--cv-accent);
+}
+
+.cv-page-studio .cv-job-meta span {
+  color: var(--cv-muted);
+}
+
+.cv-page-studio .cv-skills-label {
+  color: var(--cv-accent);
+}
+
+.cv-page-studio .cv-contact a {
+  color: var(--cv-ink);
+  text-decoration-color: var(--cv-accent);
+}
+
+.cv-header-studio {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom-color: var(--cv-ink);
+}
+
+.cv-header-studio .cv-photo {
+  width: 72px;
+  height: 72px;
+}
+
+.cv-header-studio .cv-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.cv-header-studio .cv-header-top > div {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.cv-header-studio h1 {
+  margin: 0 0 3px;
+  font-size: 28px;
+  line-height: .95;
+}
+
+.cv-header-studio .cv-role {
+  font-size: 11px;
+  letter-spacing: .07em;
+}
+
+.cv-header-studio .cv-tagline {
+  margin: 4px 0 0;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.cv-header-studio .cv-contact {
+  align-items: flex-end;
+  text-align: right;
+  font-size: 10.5px;
+  line-height: 1.3;
+  gap: 1px;
+  flex: 0 0 auto;
+  max-width: 40%;
 }
 
 .cv-page-game .cv-role { color: #111514; }
@@ -195,6 +305,7 @@
 .cv-page-game .cv-job ul {
   font-size: 11px;
   line-height: 1.32;
+  padding-left: 14px;
 }
 .cv-page-game .cv-job li + li { margin-top: 2px; }
 .cv-page-game .cv-split-game {
@@ -207,6 +318,44 @@
 .cv-page-game .cv-edu + .cv-edu { margin-top: 6px; }
 .cv-page-game .cv-edu strong { font-size: 11.5px; margin-bottom: 1px; }
 .cv-page-game .cv-edu span { font-size: 10.5px; }
+
+/* Studio IT: fill one A4 page without looking sparse */
+.cv-page-studio .cv-block { margin-bottom: 9px; }
+.cv-page-studio .cv-block h2 {
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+  font-size: 10.5px;
+}
+.cv-page-studio .cv-block > p {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+.cv-page-studio .cv-job + .cv-job {
+  margin-top: 7px;
+  padding-top: 7px;
+}
+.cv-page-studio .cv-job-meta h3 { font-size: 13px; }
+.cv-page-studio .cv-job-role {
+  margin: 2px 0 3px;
+  font-size: 11px;
+}
+.cv-page-studio .cv-job ul {
+  font-size: 11px;
+  line-height: 1.32;
+  padding-left: 15px;
+}
+.cv-page-studio .cv-job li + li { margin-top: 2px; }
+.cv-page-studio .cv-split-game { gap: 16px; margin-top: 0; }
+.cv-page-studio .cv-skills-grid { gap: 10px; }
+.cv-page-studio .cv-skills-label { margin-bottom: 4px; font-size: 9.5px; }
+.cv-page-studio .cv-skills-grid ul {
+  font-size: 11px;
+  line-height: 1.32;
+  padding-left: 13px;
+}
+.cv-page-studio .cv-edu + .cv-edu { margin-top: 7px; }
+.cv-page-studio .cv-edu strong { font-size: 12px; margin-bottom: 2px; }
+.cv-page-studio .cv-edu span { font-size: 11px; }
 
 .cv-contact a {
   color: inherit;
@@ -336,13 +485,20 @@
 
 .cv-skills-grid li + li { margin-top: 2px; }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
   .cv-header,
   .cv-split { grid-template-columns: 1fr; }
   .cv-header-game { grid-template-columns: 72px 1fr; }
   .cv-header-game .cv-contact {
     grid-column: 1 / -1;
     justify-items: start;
+    text-align: left;
+  }
+  .cv-header-studio { grid-template-columns: 64px 1fr; }
+  .cv-header-studio .cv-header-top { flex-direction: column; gap: 8px; }
+  .cv-header-studio .cv-contact {
+    max-width: none;
+    align-items: flex-start;
     text-align: left;
   }
   .cv-skills-grid { grid-template-columns: repeat(2, 1fr); }
@@ -353,7 +509,7 @@
 @media print {
   @page {
     size: A4 portrait;
-    margin: 6mm;
+    margin: 4mm;
   }
 
   html, body {
@@ -376,14 +532,73 @@
     break-after: avoid;
   }
 
-  .cv-page-game {
+  .cv-page-game,
+  .cv-page-studio {
     padding: 0 !important;
+  }
+
+  .cv-page-studio {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  .cv-page-studio .cv-photo {
+    box-shadow: 2px 2px 0 #6f8f7c !important;
+    background: #c5d4c8 !important;
+  }
+
+  .cv-page-studio .cv-photo img {
+    filter: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-page-studio .cv-role,
+  .cv-page-studio .cv-job-role,
+  .cv-page-studio .cv-skills-label {
+    color: #6f8f7c !important;
+  }
+
+  .cv-page-studio .cv-block h2,
+  .cv-page-studio .cv-split h2 {
+    border-bottom-color: #6f8f7c !important;
   }
 
   .cv-page-game .cv-header-game {
     gap: 10px;
-    padding-bottom: 6px;
-    margin-bottom: 6px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+
+  .cv-page-studio .cv-header-studio {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 12px;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+  }
+
+  .cv-page-studio .cv-header-top {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 12px;
+  }
+
+  .cv-page-studio .cv-header-studio .cv-photo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .cv-page-studio .cv-header-studio h1 { font-size: 26px; }
+  .cv-page-studio .cv-role { font-size: 10.5px; }
+  .cv-page-studio .cv-tagline { font-size: 10.5px; }
+  .cv-page-studio .cv-contact {
+    max-width: 38%;
+    align-items: flex-end !important;
+    text-align: right !important;
+    font-size: 10px;
+    gap: 1px;
   }
 
   .cv-page-game .cv-photo {
@@ -392,10 +607,66 @@
   }
 
   .cv-page-game .cv-header h1 { font-size: 24px; margin-bottom: 2px; }
+  .cv-page-game .cv-tagline { margin-top: 4px; font-size: 10.5px; }
   .cv-page-game .cv-contact { font-size: 10px; gap: 2px; }
   .cv-page-game .cv-block { margin-bottom: 7px; }
+  .cv-page-game .cv-block > p {
+    font-size: 11px;
+    line-height: 1.32;
+  }
   .cv-page-game .cv-job + .cv-job { margin-top: 5px; padding-top: 5px; }
-  .cv-photo img { filter: grayscale(1) contrast(1.15) !important; }
+  .cv-page-game .cv-job ul {
+    font-size: 10.5px;
+    line-height: 1.28;
+    padding-left: 13px;
+  }
+  .cv-page-game .cv-job-meta h3 { font-size: 12px; }
+  .cv-page-game .cv-job-role { font-size: 10.5px; margin: 2px 0 3px; }
+  .cv-page-game .cv-split-game { gap: 12px; }
+  .cv-page-game .cv-skills-grid ul {
+    font-size: 10px;
+    line-height: 1.28;
+    padding-left: 12px;
+  }
+  .cv-page-game .cv-edu strong { font-size: 11px; }
+  .cv-page-game .cv-edu span { font-size: 10px; }
+
+  .cv-page-studio .cv-block { margin-bottom: 7px; }
+  .cv-page-studio .cv-block h2 { font-size: 10px; margin-bottom: 3px; }
+  .cv-page-studio .cv-block > p {
+    font-size: 11px;
+    line-height: 1.32;
+  }
+  .cv-page-studio .cv-job + .cv-job { margin-top: 5px; padding-top: 5px; }
+  .cv-page-studio .cv-job-meta h3 { font-size: 12px; }
+  .cv-page-studio .cv-job-role { font-size: 10.5px; margin: 1px 0 2px; }
+  .cv-page-studio .cv-job ul {
+    font-size: 10.5px;
+    line-height: 1.28;
+    padding-left: 14px;
+  }
+  .cv-page-studio .cv-job li + li { margin-top: 1px; }
+  .cv-page-studio .cv-split-game { gap: 14px; }
+  .cv-page-studio .cv-skills-grid { gap: 8px; }
+  .cv-page-studio .cv-skills-label { font-size: 9px; margin-bottom: 3px; }
+  .cv-page-studio .cv-skills-grid ul {
+    font-size: 10px;
+    line-height: 1.28;
+    padding-left: 12px;
+  }
+  .cv-page-studio .cv-edu + .cv-edu { margin-top: 5px; }
+  .cv-page-studio .cv-edu strong { font-size: 11px; }
+  .cv-page-studio .cv-edu span { font-size: 10px; }
+
+  /* Game Presenter keeps B&W photo; Studio is color */
+  .cv-page-game:not(.cv-page-studio) .cv-photo img {
+    filter: grayscale(1) contrast(1.15) !important;
+  }
 
   a { text-decoration: none; color: inherit; }
+
+  .cv-page-studio .cv-contact a {
+    text-decoration: underline;
+    text-decoration-color: #6f8f7c;
+  }
 }

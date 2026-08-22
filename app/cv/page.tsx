@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CVGamePresenter } from "./cv-game-presenter";
 import { CVGeneral } from "./cv-general";
+import { CVStudioIT } from "./cv-studio-it";
 import "./cv.css";
 
-type Variant = "general" | "game";
+type Variant = "general" | "game" | "studio";
 
 const STORAGE_KEY = "cv-variant";
 
@@ -15,7 +16,7 @@ export default function CVPage() {
 
   useEffect(() => {
     const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved === "general" || saved === "game") setVariant(saved);
+    if (saved === "general" || saved === "game" || saved === "studio") setVariant(saved);
   }, []);
 
   function select(next: Variant) {
@@ -43,6 +44,13 @@ export default function CVPage() {
           >
             Game Presenter
           </button>
+          <button
+            type="button"
+            className={variant === "studio" ? "is-active" : undefined}
+            onClick={() => select("studio")}
+          >
+            Studio IT
+          </button>
         </div>
 
         <button type="button" onClick={() => window.print()}>
@@ -50,7 +58,13 @@ export default function CVPage() {
         </button>
       </div>
 
-      {variant === "general" ? <CVGeneral /> : <CVGamePresenter />}
+      {variant === "general" ? (
+        <CVGeneral />
+      ) : variant === "game" ? (
+        <CVGamePresenter />
+      ) : (
+        <CVStudioIT />
+      )}
     </main>
   );
 }

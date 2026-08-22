@@ -4,7 +4,7 @@ export function CVGeneral() {
       <header className="cv-header">
         <div className="cv-photo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/cv/cv.png" alt="Matías Asin" />
+          <img src="/portrait.png" alt="Matías Asin" />
         </div>
         <div className="cv-header-main">
           <h1>Matías Asin</h1>
@@ -75,7 +75,7 @@ export function CVGeneral() {
           <ul>
             <li>
               Plataforma de delivery local (usuario, negocio, repartidor) con Next.js,
-              Supabase y PWA.
+              Postgres y PWA.
             </li>
             <li>Misma metodología punta a punta; producto aún en fase beta.</li>
           </ul>
@@ -118,7 +118,7 @@ export function CVGeneral() {
             <li>Next.js / React</li>
             <li>TypeScript</li>
             <li>Java</li>
-            <li>SQL / Supabase</li>
+            <li>SQL / Postgres</li>
             <li>Flutter</li>
             <li>Mercado Pago Checkout Pro</li>
             <li>API security / pentest</li>

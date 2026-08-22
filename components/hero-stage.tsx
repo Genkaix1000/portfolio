@@ -30,7 +30,7 @@ export function HeroStage() {
       <div className="stage-portrait">
         <div className="portrait-frame">
           <Image
-            src="/cv/cv.png"
+            src="/portrait.png"
             alt={t.hero.photoAlt}
             fill
             sizes="(max-width: 760px) 80vw, 385px"
