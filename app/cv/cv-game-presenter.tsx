@@ -21,7 +21,7 @@ export function CVGamePresenter() {
             <a href="tel:+5491170623866">+54 9 11 70623866</a>
           </li>
           <li>
-            <a href="mailto:matiasasin123@gmail.com">matiasasin123@gmail.com</a>
+            <a href="mailto:matiasasin123@icloud.com">matiasasin123@icloud.com</a>
           </li>
           <li>English · Spanish (native)</li>
         </ul>

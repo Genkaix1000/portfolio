@@ -1,0 +1,388 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-26",
+  "personal": {
+    "name": "Matías Asin",
+    "age": 25,
+    "location": {
+      "city": "Bolívar",
+      "state": "Buenos Aires",
+      "country": "Argentina",
+      "availability": {
+        "remote": true,
+        "onSiteCABA": true,
+        "relocation": true,
+        "preferredRelocation": ["Malta", "España", "Internacional"]
+      }
+    },
+    "contact": {
+      "email": "matiasasin123@icloud.com",
+      "secondaryEmail": "matiasasin123@gmail.com",
+      "phone": "+54 9 11 70623866",
+      "github": "https://github.com/Genkaix1000",
+      "linkedin": "https://www.linkedin.com/in/matias-asin-573320250/",
+      "portfolio": "https://github.com/Genkaix1000/portfolio",
+      "instagramDesign": "https://www.instagram.com/matiasasin/"
+    },
+    "languages": [
+      {
+        "language": "Español",
+        "level": "Nativo"
+      },
+      {
+        "language": "Inglés",
+        "level": "Competencia profesional completa / Fluido (Professional Working)"
+      }
+    ]
+  },
+  "skillsTaxonomy": {
+    "frontend": [
+      "React",
+      "Next.js (App Router)",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Tailwind CSS",
+      "PWA (Progressive Web Apps)",
+      "HTML5 / CSS3",
+      "Flutter"
+    ],
+    "backendAndRealtime": [
+      "Node.js",
+      "TypeScript",
+      "Java (Spring / OOP)",
+      "Server-Sent Events (SSE)",
+      "REST APIs",
+      "Webhooks",
+      "Mercado Pago Checkout Pro SDK / API"
+    ],
+    "databasesAndData": [
+      "PostgreSQL",
+      "SQL (DDL/DML, joins, subqueries, optimización)",
+      "Modelado relacional y esquemas de datos",
+      "Análisis de datos & Reporting",
+      "Excel avanzado"
+    ],
+    "itInfrastructureAndNetworking": [
+      "Linux (Arch Linux daily driver, Ubuntu Server)",
+      "Segmentación de redes y Subnets Wi-Fi",
+      "Configuración de Access Points (APs)",
+      "TCP/IP, DNS, Port Forwarding, NAT, LAN",
+      "Diagnóstico y resolución de microcortes de red",
+      "Hardware PC (ensamblado, diagnóstico y reparación de componentes)",
+      "Periféricos de punto de venta (Impresoras térmicas USB/Bluetooth, tablets, terminales)",
+      "Administración de VPS Linux, cPanel, FTP",
+      "CCTV / NVR (instalación, configuración y monitoreo)"
+    ],
+    "security": [
+      "Responsible Disclosure",
+      "Auditoría de seguridad web y APIs",
+      "Análisis de superficie pública",
+      "Autenticación & Autorización (Auth/RBAC)",
+      "Informes técnicos de remediación de vulnerabilidades"
+    ],
+    "designAndCreative": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Identidad visual y branding",
+      "Diseño de interfaces (UI/UX) funcional para floor/operación"
+    ],
+    "softSkills": [
+      "Manejo de crisis y operación bajo alta presión",
+      "Comunicación directa y resolución de conflictos",
+      "Capacitación de staff operativo",
+      "Pensamiento orientado a procesos de negocio y producto de punta a punta"
+    ]
+  },
+  "workHistory": [
+    {
+      "id": "miboliche-cocktrail",
+      "title": "miBoliche (Cocktrail)",
+      "companyOrVenue": "Bosko Nightclub",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026-05",
+      "endDate": null,
+      "current": true,
+      "status": "En producción estable",
+      "links": {
+        "landing": "https://miboliche-landing.vercel.app",
+        "repository": "https://github.com/Genkaix1000/Cocktrail"
+      },
+      "roles": [
+        "Full Stack & Product Engineer",
+        "Software de Gestión & POS Developer",
+        "Live Venue IT & Network Operations"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Mercado Pago Checkout Pro",
+        "Server-Sent Events (SSE)",
+        "SQL / Postgres",
+        "Networking Wi-Fi Dual Subnet"
+      ],
+      "summary": "Sistema integral de punto de venta (POS), carta digital interactiva y pedidos por código QR para locales nocturnos con alta concurrencia.",
+      "operationalScaleAndMetrics": {
+        "volume": "~1.000 tragos / pedidos despachados por noche en eventos pico",
+        "venue": "Bosko Nightclub",
+        "impact": "Eliminación del cuello de botella en barra al automatizar cobros y toma de comandas, permitiendo a los bartenders enfocarse 100% en la preparación. Carta digital con visualización clara y actualizada en tiempo real."
+      },
+      "keyAchievements": [
+        "Diseño e implementación de punta a punta: frontend para clientes (carta QR), módulo de barra con cola de despacho en vivo (SSE) y panel de caja.",
+        "Integración certificada de Mercado Pago Checkout Pro para procesamiento de pagos móviles inmediatos y trazabilidad de transacciones.",
+        "Despliegue y soporte presencial nocturno en caliente durante fines de semana, asistiendo y capacitando al personal de barra y caja.",
+        "Diseño de la infraestructura de red del venue: división de red Wi-Fi en 2 subredes aisladas (operativa vs clientes) y optimización de Access Points para erradicar microcortes en la pista de baile.",
+        "Configuración e integración de impresoras térmicas (USB/Bluetooth), tablets y terminales de apoyo operativo."
+      ]
+    },
+    {
+      "id": "bolivar-pide",
+      "title": "Bolívar Pide (delivery / bolivarpide)",
+      "companyOrVenue": "SaaS Propio / Local Delivery Marketplace",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026-08",
+      "endDate": null,
+      "current": true,
+      "status": "Fase Beta / En desarrollo activo",
+      "links": {
+        "repository": "https://github.com/Genkaix1000/bolivarpide"
+      },
+      "roles": [
+        "Full Stack & SaaS Product Engineer",
+        "System Architect",
+        "Product Designer"
+      ],
+      "stack": [
+        "Next.js 16 (App Router)",
+        "React 19",
+        "TypeScript",
+        "Supabase (PostgreSQL, Auth, Storage, Realtime)",
+        "Row Level Security (RLS)",
+        "Tailwind CSS v4",
+        "Framer Motion",
+        "Zod",
+        "PWA (Trusted Web Activity / TWA-ready)",
+        "Mercado Pago SDK"
+      ],
+      "summary": "Plataforma SaaS y marketplace de delivery local de 3 caras (Negocio, Consumidor, Repartidor) construida con enfoque 'Business-First' y arquitectura serverless en Supabase + Next.js.",
+      "productArchitectureAndActors": {
+        "approach": "Business-First Architecture: Se priorizó el desarrollo del panel operativo del local (/negocio/*) antes del marketplace de consumidores, asegurando que los negocios tengan control total de su carta, stock, comandera y horarios.",
+        "threeFaces": {
+          "negocio": "Panel operativo (/negocio/*) con dashboard de KPIs, comandera en tiempo real vía WebSockets (Supabase Realtime), CRUD de productos y carta con subida a Storage, gestión de horarios de apertura (business_hours) y asignación de repartidores.",
+          "consumidor": "Web App PWA (/): Discovery de locales verificados y publicados, catálogo interactivo con filtros por categoría, geolocalización y seguimiento de estado de pedidos.",
+          "repartidor": "Módulo de logística: Notificación de asignación de comandas, trazabilidad de delivery y confirmación de entrega."
+        },
+        "orderLifecycle": "pending → accepted → preparing → delivering → delivered | cancelled"
+      },
+      "keyAchievements": [
+        "Diseño de arquitectura de base de datos relacional en PostgreSQL con Row Level Security (RLS) estricto garantizando aislamiento multi-tenant por membresía de negocio (business_members).",
+        "Modelado de datos resiliente: manejo de montos en enteros (centavos ARS) para evitar errores de precisión de punto flotante y secuencias de pedidos independientes por comercio.",
+        "Implementación de comandera en tiempo real con WebSockets (Supabase Realtime) para recepción y cambio de estados de comandas sin recarga de página.",
+        "Estrategia de distribución PWA + TWA (Trusted Web Activity) permitiendo acceso web ultrarrápido sin fricción de descarga y publicación en Google Play Store con un único codebase.",
+        "Embudo de adquisición comercial automatizado: flujo de registro de locales (/negocio/registro -> tabla leads) y checklist de publicación progresiva según completitud de carta y horarios."
+      ]
+    },
+    {
+      "id": "actual-security-disclosure",
+      "title": "Auditoría de Seguridad Web & Re-Auditoría de Vulnerabilidades",
+      "companyOrVenue": "Actual Supermercados (actualonline.com.ar)",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026-08",
+      "endDate": "2026-08",
+      "current": false,
+      "status": "Auditoría Autorizada & Re-Auditoría Ejecutiva Completada",
+      "roles": [
+        "Security Researcher (Responsible Disclosure)",
+        "Technical Pentester & Remediation Consultant"
+      ],
+      "stack": [
+        "API Security & Hardening",
+        "Web Pentesting (OWASP Top 10)",
+        "Authentication & Authorization Inspection",
+        "Cost-Depletion Attack Analysis (AI Quota)",
+        "Infraestructura Web & Reconocimiento (PHP, Cloudflare, cPanel)",
+        "Generación de Informes Ejecutivos y Técnicos"
+      ],
+      "summary": "Proceso de Responsible Disclosure formal sobre actualonline.com.ar (backend PHP / SPA admin / e-commerce). Descubrimiento de 22 hallazgos iniciales y posterior re-auditoría con matriz de regresión, detección de 5 vectores de ataque explotables y entrega de plan de remediación priorizado a la dirección.",
+      "criticalFindingsAndVectors": [
+        "Agotamiento de cuota y costos económicos directos: Endpoint POST /api/procesarComprobante sin auth permitiendo saturar requests y agotar la cuota de la API de Anthropic Claude.",
+        "Exposición y dump completo de base de datos de catálogo: Endpoint POST /api/products/{id} sin autenticación exponiendo 5.040 artículos con 4 listas de precio, stock en tiempo real, usuarios internos de caja y proveedores.",
+        "Filtración de datos fiscales: Exposición pública de QR Fiscal AFIP con CUIT y razón social en POST /api/getDataFiscalByEmpresa sin auth.",
+        "Fuerza bruta sobre autenticación: Carencia de rate-limiting en POST /api/auth con credenciales numéricas por defecto de 4 dígitos (ej: brown:1234), brute-forceables en segundos.",
+        "Remediación verificada de tokens críticos: Eliminación de tokens expuestos de Mercado Pago (MP_token) y API keys de SendGrid en respuestas públicas."
+      ],
+      "keyAchievements": [
+        "Detección ética inicial y reporte formal directo a la directiva de la empresa con estricto apego a protocolos de divulgación responsable.",
+        "Auditoría integral de la superficie pública y API endpoints, elaborando un reporte inicial con 22 hallazgos categorizados por severidad (Crítico, Alto, Medio, Bajo).",
+        "Ejecución de re-auditoría de verificación (5 de agosto de 2026) con matriz de regresión para validar remediaciones implementadas y alertar sobre 8 nuevos vectores emergentes.",
+        "Entrega de Informe Ejecutivo y Plan de Remediación Priorizado (Inmediato, Corto y Mediano Plazo), incluyendo headers defensivos (CSP, HSTS, X-Frame-Options) y blindaje de endpoints."
+      ]
+    },
+    {
+      "id": "actual-supermercados-logistics",
+      "title": "Coordinación Logística & Soporte IT en Planta",
+      "companyOrVenue": "Actual Supermercados",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2025-01",
+      "endDate": "2026-05",
+      "current": false,
+      "roles": [
+        "Coordinador de Logística & Distribución",
+        "Soporte IT de Primer Nivel en Piso"
+      ],
+      "summary": "Operación logística de alto volumen en retail y resolución inmediata de incidencias de hardware/sistemas para garantizar continuidad operativa.",
+      "keyAchievements": [
+        "Coordinación de flujos de distribución, control de stock y plazos críticos de reposición bajo alta demanda.",
+        "Soporte técnico in-situ: resolución de fallas en PCs de cajas/depósito, impresoras térmicas/fiscales, conectividad y drivers, evitando la interrupción de la facturación y despacho."
+      ]
+    },
+    {
+      "id": "neptunohost",
+      "title": "Administración de Servidores & Soporte",
+      "companyOrVenue": "NeptunoHost",
+      "location": "Remoto",
+      "startDate": "2020",
+      "endDate": "2020",
+      "current": false,
+      "roles": [
+        "Sysadmin Junior VPS & Soporte Técnico"
+      ],
+      "stack": [
+        "Linux VPS",
+        "cPanel",
+        "FTP",
+        "Networking (DNS, Puertos)",
+        "Discord / WhatsApp Support"
+      ],
+      "summary": "Servicios de hosting para comunidades de gaming y servidores dedicados.",
+      "keyAchievements": [
+        "Aprovisionamiento y particionamiento de VPS Linux, mapeo de puertos y gestión de accesos FTP/cPanel.",
+        "Soporte técnico directo al usuario para diagnóstico y solución de caídas de servicio."
+      ]
+    },
+    {
+      "id": "freelance-design-rrpp",
+      "title": "Diseño Gráfico & Relaciones Públicas",
+      "companyOrVenue": "Freelance / asn.psd",
+      "location": "Bolívar / Remoto",
+      "startDate": "2020",
+      "endDate": null,
+      "current": true,
+      "roles": [
+        "Diseñador de Identidad Visual",
+        "Atención al Cliente & RRPP"
+      ],
+      "stack": [
+        "Photoshop",
+        "Illustrator",
+        "Branding",
+        "Manejo de Crisis"
+      ],
+      "summary": "Creación de marcas e identidades visuales combinado con experiencia en atención al público en ambientes de alta interacción social y estrés.",
+      "keyAchievements": [
+        "Desarrollo de piezas gráficas, flyers e identidades completas para clientes locales y marcas nocturnas.",
+        "Resolución de conflictos y mediación en atención directa al público."
+      ]
+    }
+  ],
+  "educationAndCertifications": [
+    {
+      "type": "degree",
+      "title": "Tecnicatura Superior en Ciencia de Datos",
+      "institution": "Teclab Instituto Técnico Superior",
+      "status": "En curso (Etapa final)",
+      "intermediateTitleObtained": true,
+      "intermediateTitleName": "Certificado Intermedio en Ciencia de Datos",
+      "documents": [
+        { "name": "Constancia de Alumno Regular", "path": "/certs/constancia.pdf" },
+        { "name": "Título Intermedio", "path": "/certs/intermedio.pdf" },
+        { "name": "Certificado Analítico", "path": "/certs/analitico.pdf" }
+      ],
+      "focus": [
+        "Análisis de datos y modelado relacional",
+        "SQL avanzado y consultas complejas",
+        "Estadística aplicada y lógica algorítmica"
+      ]
+    },
+    {
+      "type": "certification",
+      "title": "Certificación Oficial Mercado Pago Checkout Pro (Desarrollador Certificado)",
+      "institution": "Mercado Pago",
+      "status": "Certificado Oficial",
+      "integratorId": "dev_24c65fb163bf11ea96500242ac130004",
+      "documents": [
+        { "name": "Certificado Checkout Pro", "path": "/certs/checkout-pro.pdf" }
+      ],
+      "technicalCriteria": [
+        "Configuración avanzada del SDK de Mercado Pago (Node.js/TypeScript y MercadoPago.js v2 con Wallet Brick)",
+        "Creación de preferencias con personalización de medios de pago excluidos, cuotas máximas y back_urls",
+        "Implementación de Webhooks e IPN para procesamiento asíncrono y conciliación de estados de pago (approved, in_process, rejected)",
+        "Trazabilidad de pagos vinculando external_reference e Integrator ID para auditoría de pasarela",
+        "Arquitectura modular para integración en ecosistemas web, mobile y backend serverless"
+      ],
+      "focus": [
+        "Integración de pasarela de cobro web/mobile",
+        "Manejo de webhooks y notificaciones IPN en tiempo real",
+        "Seguridad transaccional y conciliación automática de pagos"
+      ]
+    },
+    {
+      "type": "course",
+      "title": "Full Stack Web Development",
+      "institution": "Egg Cooperation",
+      "status": "Completado",
+      "documents": [
+        {
+          "name": "Certificado Backend Java",
+          "url": "https://egg-csv-bulk-certificates-prod.s3.amazonaws.com/certificates/63f787f294d117558b4fc81a-1756673724399.pdf"
+        },
+        {
+          "name": "Certificado Frontend React",
+          "url": "https://egg-csv-bulk-certificates-prod.s3.amazonaws.com/certificates/63f787f294d117558b4fc81a-1756673624036.pdf"
+        }
+      ],
+      "focus": [
+        "Programación Orientada a Objetos en Java",
+        "Spring Boot y persistencia de datos relacionales",
+        "Frontend React con componentes funcionales y Hooks"
+      ]
+    },
+    {
+      "type": "highSchool",
+      "title": "Bachiller",
+      "institution": "Escuela de Educación Secundaria N° 4 (EESN4)",
+      "status": "Completado"
+    }
+  ],
+  "profileAdaptationMatrix": {
+    "fullstack_engineer": {
+      "headline": "Software Engineer · Full Stack",
+      "tagline": "Sistemas claros para problemas que no lo son · Criterio de datos, pagos y operación real",
+      "coreStack": ["Next.js", "React", "TypeScript", "Node.js", "Java", "SQL / Postgres", "Mercado Pago", "SSE"],
+      "highlightNarrative": "Desarrollador full stack enfocado en productos de punta a punta. Creador de miBoliche (POS y pedidos en vivo procesando ~1.000 tragos por noche en Bosko con Next.js, SSE y Mercado Pago) y Bolívar Pide (delivery multi-rol en beta). Formación en Ciencia de Datos (Teclab) y base de ciberseguridad.",
+      "leadProjects": ["miboliche-cocktrail", "bolivar-pide", "actual-security-disclosure"]
+    },
+    "studio_it_technician": {
+      "headline": "Junior Studio IT Technician / Support Engineer",
+      "tagline": "Hands-on IT support · live venue ops · Windows, networking & Linux",
+      "coreStack": ["Linux (Arch/Ubuntu)", "Subnets / Wi-Fi APs", "TCP/IP & LAN", "Hardware PC", "Printers/Tablets", "CCTV/NVR"],
+      "highlightNarrative": "Técnico de soporte IT con experiencia práctica en entornos de alta exigencia en vivo. Responsable del despliegue de red y soporte de hardware en Bosko (segmentación de Wi-Fi, solución de microcortes, impresoras térmicas) y mantenimiento de PCs de facturación en retail. Disponible para relocalización internacional (Malta / Europa).",
+      "leadProjects": ["miboliche-cocktrail", "actual-supermercados-logistics", "neptunohost"]
+    },
+    "it_sql_business_software": {
+      "headline": "Joven Profesional IT · Desarrollo & Gestión de Software",
+      "tagline": "Sistemas de gestión operativa (POS) · Procesos de negocio · SQL & Datos",
+      "coreStack": ["Java", "TypeScript", "SQL / Postgres", "Next.js", "Gestión de Requerimientos", "POS"],
+      "highlightNarrative": "Estudiante avanzado de Ciencia de Datos con sólida comprensión de procesos de negocio y experiencia implementando software de gestión operativo (POS, stock, cobros). Capacidad analítica para traducir necesidades operativas de piso en funcionalidades de software robustas. Abierto a aprender nuevas tecnologías y lenguajes corporativos.",
+      "leadProjects": ["miboliche-cocktrail", "bolivar-pide", "actual-supermercados-logistics"]
+    },
+    "game_presenter_operations": {
+      "headline": "Live Operations / Game Presenter",
+      "tagline": "Live communication · composure under pressure · audience-ready presence",
+      "coreStack": ["Live Communication", "Crisis Management", "Public Relations", "Brand Design", "Team Training"],
+      "highlightNarrative": "Profesional de 25 años con amplia soltura en comunicación en vivo y manejo de situaciones críticas bajo presión. Experiencia capacitando equipos y coordinando operaciones en vivo en locales nocturnos y retail. Presencia enérgica, claridad de dicción y excelente trato interpersonal en español e inglés.",
+      "leadProjects": ["miboliche-cocktrail", "actual-supermercados-logistics", "freelance-design-rrpp"]
+    }
+  }
+}

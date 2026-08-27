@@ -13,26 +13,16 @@ export function CVStudioIT() {
               <h1>Matías Asin</h1>
               <p className="cv-role">Junior Studio IT Technician</p>
               <p className="cv-tagline">
-                Hands-on IT · live venue ops · Linux &amp; networking · security judgment
+                Hands-on IT support · live venue ops · Windows, networking &amp; Linux
               </p>
             </div>
             <ul className="cv-contact">
-              <li>Bolívar, BA, Argentina · 25</li>
+              <li>Bolívar, BA, Argentina</li>
               <li>
                 <a href="tel:+5491170623866">+54 9 11 70623866</a>
               </li>
               <li>
-                <a href="mailto:matiasasin123@gmail.com">matiasasin123@gmail.com</a>
-              </li>
-              <li>
-                <a href="https://matiasasin.is-a.dev/" target="_blank" rel="noreferrer">
-                  matiasasin.is-a.dev
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/Genkaix1000" target="_blank" rel="noreferrer">
-                  github.com/Genkaix1000
-                </a>
+                <a href="mailto:matiasasin123@icloud.com">matiasasin123@icloud.com</a>
               </li>
               <li>English · Spanish (native)</li>
               <li>Open to relocate to Malta</li>
@@ -44,10 +34,10 @@ export function CVStudioIT() {
       <section className="cv-block">
         <h2>About Me</h2>
         <p>
-          Hands-on IT after a full transition from retail ops into technology. Live venue
-          systems on-site, Linux VPS hosting, home lab / CCTV, and local-first software for
-          the floor. Windows end-to-end; Linux daily (Arch). Methodical troubleshooting, clear
-          notes, calm under time pressure — eager to grow in a live studio IT team.
+          25-year-old hands-on IT support after moving from retail ops into technology.
+          Experience with live venue devices and networks (PCs, tablets, printers, Wi‑Fi),
+          home lab / CCTV, and Linux. Methodical troubleshooting, clear notes, calm under
+          time pressure — eager to learn studio IT under guidance in a live production team.
         </p>
       </section>
 
@@ -59,67 +49,19 @@ export function CVStudioIT() {
             <h3>miBoliche</h3>
             <span>May 2026 — Present</span>
           </div>
-          <p className="cv-job-role">Live ops · on-site IT &amp; systems</p>
+          <p className="cv-job-role">Live venue IT support · on-site</p>
           <ul>
             <li>
-              Production POS / QR nightlife stack with overnight support; no mid-shift production
-              changes — phone notes during service, fixes the next day from feedback.
+              First-line support during overnight service: tablets, PCs, printers and floor
+              devices. Phone notes during shifts; fixes the next day from staff feedback.
             </li>
             <li>
-              On-site network and devices: split Wi‑Fi into two subnets (system vs customers, different
-              bandwidth); APs, printers (Bluetooth/USB), tablets and PCs; diagnosed micro-cuts and
-              stabilized the floor network.
+              On-site network: split Wi‑Fi into two subnets (ops vs customers), configured APs,
+              and diagnosed intermittent micro-cuts until the floor network stabilized.
             </li>
             <li>
-              Stack context: backend on Render, frontend on Vercel, Postgres, DNS / proxy / Cloudflare.
-            </li>
-          </ul>
-        </div>
-
-        <div className="cv-job">
-          <div className="cv-job-meta">
-            <h3>VentaPro</h3>
-            <span>Aug 2026 — Present</span>
-          </div>
-          <p className="cv-job-role">Solo · local-first retail POS · in development</p>
-          <ul>
-            <li>
-              Designing and building a local-first POS for retail: stack on the merchant PC, LAN PWA
-              for phones, local Postgres (Docker), barcode-oriented flows and Drive backups.
-            </li>
-            <li>Full ownership of product, architecture and security / permissions design.</li>
-          </ul>
-        </div>
-
-        <div className="cv-job">
-          <div className="cv-job-meta">
-            <h3>Bolívar Pide</h3>
-            <span>Aug 2026 — Present · Beta</span>
-          </div>
-          <p className="cv-job-role">Product / UX / visual lead</p>
-          <ul>
-            <li>
-              Own product idea, user flows and graphic design for a local delivery platform; partner
-              owns the backend.
-            </li>
-          </ul>
-        </div>
-
-        <div className="cv-job">
-          <div className="cv-job-meta">
-            <h3>NeptunoHost</h3>
-            <span>~2020</span>
-          </div>
-          <p className="cv-job-role">Game server hosting · Linux VPS</p>
-          <ul>
-            <li>
-              Rented Baehost VPS, partitioned for clients (game server base image); manual account
-              provisioning, assigned port per slice, cPanel + FTP for content uploads.
-            </li>
-            <li>
-              Mitigations: Cloudflare, proxy, rate-limit; daily 08:00 restart; provider-managed
-              backups. Support via Discord / WhatsApp. Fixed early lag by reducing client slots and
-              raising per-client capacity.
+              Day-to-day device setup and connectivity — Bluetooth/USB printers, tablets and
+              PCs — keeping service running when hardware misbehaved mid-shift.
             </li>
           </ul>
         </div>
@@ -132,11 +74,17 @@ export function CVStudioIT() {
           <p className="cv-job-role">Build · repair · networking · CCTV</p>
           <ul>
             <li>
-              Built and sold complete PCs from used components; offered PC repair and
-              troubleshooting for clients.
+              Built and sold complete PCs from used components; repair and troubleshooting for
+              clients (boot issues, drivers, peripherals).
             </li>
-            <li>Port forwarding and self-hosted test servers on the home network.</li>
-            <li>Home CCTV: physical install, Wi‑Fi provisioning and phone app link.</li>
+            <li>
+              Home network lab: port forwarding, self-hosted test servers, basic LAN setup and
+              device connectivity checks.
+            </li>
+            <li>
+              Home CCTV: physical camera install, Wi‑Fi provisioning, NVR-style phone app link
+              and basic monitoring.
+            </li>
           </ul>
         </div>
 
@@ -145,64 +93,76 @@ export function CVStudioIT() {
             <h3>Actual Supermercados</h3>
             <span>Jan 2025 — May 2026</span>
           </div>
-          <p className="cv-job-role">Logistics / retail ops · later authorized security review</p>
+          <p className="cv-job-role">Retail ops · first-line PC &amp; printer support</p>
           <ul>
             <li>
-              Non-tech logistics in high-volume retail until resignation; then full focus on IT.
+              High-volume retail logistics; reliable under time pressure and shift-critical
+              deadlines.
             </li>
             <li>
-              After leaving: responsible disclosure on Actual Online — contacted the owner after a
-              public-surface finding, obtained authorization, and delivered a security assessment with
-              critical issues (exposed payment credentials, unauthenticated dangerous upload path,
-              secrets in API responses; weak login controls / no rate limiting). Follow-up re-audit
-              verified key remediations.
+              Floor IT when ops stopped: diagnosed and repaired store PCs, fixed printers
+              (jams, connectivity, drivers) so checkout and warehouse could keep running.
+            </li>
+            <li>
+              After leaving: authorized responsible disclosure on a public web surface;
+              reported findings to ownership.
+            </li>
+          </ul>
+        </div>
+
+        <div className="cv-job">
+          <div className="cv-job-meta">
+            <h3>NeptunoHost</h3>
+            <span>2020</span>
+          </div>
+          <p className="cv-job-role">Game server hosting · Linux VPS · user support</p>
+          <ul>
+            <li>
+              Ran a Linux VPS partitioned for clients: account provisioning, assigned ports,
+              cPanel and FTP for content uploads.
+            </li>
+            <li>
+              Day-to-day user support via Discord and WhatsApp — clear instructions and
+              follow-up until each client was back online.
             </li>
           </ul>
         </div>
       </section>
 
-      <section className="cv-split cv-split-game">
-        <div className="cv-block">
-          <h2>Skills</h2>
-          <div className="cv-skills-grid">
-            <div>
-              <p className="cv-skills-label">Hardware &amp; OS</p>
-              <ul>
-                <li>PC build / assembly</li>
-                <li>Windows (full)</li>
-                <li>Peripherals · printers · tablets</li>
-              </ul>
-            </div>
-            <div>
-              <p className="cv-skills-label">Linux &amp; networking</p>
-              <ul>
-                <li>Arch (daily) · Ubuntu server</li>
-                <li>Subnets · DNS · TCP/IP · ports</li>
-                <li>Cloudflare · proxy · LAN setups</li>
-              </ul>
-            </div>
-            <div>
-              <p className="cv-skills-label">Ops &amp; studio-adjacent</p>
-              <ul>
-                <li>Live device setup</li>
-                <li>Home CCTV</li>
-                <li>Trello (backlog / onboard)</li>
-                <li>Incident notes · calm escalation</li>
-              </ul>
-            </div>
-            <div>
-              <p className="cv-skills-label">Software (criterion)</p>
-              <ul>
-                <li>Next.js / TypeScript</li>
-                <li>Postgres · Docker local</li>
-                <li>Git · deploy basics</li>
-              </ul>
-            </div>
+      <section className="cv-block">
+        <h2>Skills</h2>
+        <div className="cv-skills-grid cv-skills-grid-studio">
+          <div>
+            <p className="cv-skills-label">Hardware &amp; Windows</p>
+            <ul>
+              <li>PC build / assembly</li>
+              <li>Windows (full)</li>
+              <li>Peripherals · printers · tablets</li>
+            </ul>
+          </div>
+          <div>
+            <p className="cv-skills-label">Linux &amp; networking</p>
+            <ul>
+              <li>Arch (daily) · Ubuntu server</li>
+              <li>TCP/IP · DNS · subnets · ports</li>
+              <li>APs · LAN setups · basic proxy</li>
+            </ul>
+          </div>
+          <div>
+            <p className="cv-skills-label">Live support</p>
+            <ul>
+              <li>First-line device support</li>
+              <li>Home CCTV install</li>
+              <li>Incident notes · calm escalation</li>
+              <li>Trello (task / backlog habit)</li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div className="cv-block">
-          <h2>Education</h2>
+      <section className="cv-block">
+        <h2>Education</h2>
+        <div className="cv-edu-row">
           <div className="cv-edu">
             <strong>Higher Technical Degree in Data Science</strong>
             <span>Teclab — in progress · intermediate degree obtained</span>

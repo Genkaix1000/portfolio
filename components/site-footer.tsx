@@ -20,7 +20,7 @@ const socials = [
     Icon: IconInstagram,
   },
   {
-    href: "mailto:matiasasin123@gmail.com",
+    href: "mailto:matiasasin123@icloud.com",
     label: "Email",
     Icon: IconMail,
   },
@@ -42,7 +42,7 @@ export function SiteFooter() {
             <p className="footer-brand">MATÍAS ASIN</p>
             <p>{t.footer.location}</p>
             <p>
-              <a href="mailto:matiasasin123@gmail.com">matiasasin123@gmail.com</a>
+              <a href="mailto:matiasasin123@icloud.com">matiasasin123@icloud.com</a>
               <i>·</i>
               <a href="tel:+5491170623866">+54 9 11 70623866</a>
             </p>

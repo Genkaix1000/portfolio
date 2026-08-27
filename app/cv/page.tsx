@@ -2,21 +2,23 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { CVAdaptadoSql } from "./cv-adaptado-sql";
 import { CVGamePresenter } from "./cv-game-presenter";
 import { CVGeneral } from "./cv-general";
 import { CVStudioIT } from "./cv-studio-it";
 import "./cv.css";
 
-type Variant = "general" | "game" | "studio";
+type Variant = "general" | "game" | "studio" | "adaptado-sql";
 
 const STORAGE_KEY = "cv-variant";
+const VARIANTS: Variant[] = ["general", "game", "studio", "adaptado-sql"];
 
 export default function CVPage() {
   const [variant, setVariant] = useState<Variant>("general");
 
   useEffect(() => {
     const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved === "general" || saved === "game" || saved === "studio") setVariant(saved);
+    if (saved && VARIANTS.includes(saved as Variant)) setVariant(saved as Variant);
   }, []);
 
   function select(next: Variant) {
@@ -51,6 +53,13 @@ export default function CVPage() {
           >
             Studio IT
           </button>
+          <button
+            type="button"
+            className={variant === "adaptado-sql" ? "is-active" : undefined}
+            onClick={() => select("adaptado-sql")}
+          >
+            Adaptados
+          </button>
         </div>
 
         <button type="button" onClick={() => window.print()}>
@@ -62,8 +71,10 @@ export default function CVPage() {
         <CVGeneral />
       ) : variant === "game" ? (
         <CVGamePresenter />
-      ) : (
+      ) : variant === "studio" ? (
         <CVStudioIT />
+      ) : (
+        <CVAdaptadoSql />
       )}
     </main>
   );

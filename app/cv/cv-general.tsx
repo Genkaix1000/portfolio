@@ -13,7 +13,7 @@ export function CVGeneral() {
         <ul className="cv-contact">
           <li>Bolívar, BA, Argentina</li>
           <li>
-            <a href="mailto:matiasasin123@gmail.com">matiasasin123@gmail.com</a>
+            <a href="mailto:matiasasin123@icloud.com">matiasasin123@icloud.com</a>
           </li>
           <li>
             <a href="tel:+5491170623866">+54 9 11 70623866</a>
@@ -50,8 +50,8 @@ export function CVGeneral() {
 
         <div className="cv-job">
           <div className="cv-job-meta">
-            <h3>miBoliche — Bosko</h3>
-            <span>May 2024 — Presente</span>
+            <h3>miBoliche</h3>
+            <span>May 2026 — Presente</span>
           </div>
           <p className="cv-job-role">Full Stack · Operations & Product</p>
           <ul>
@@ -69,7 +69,7 @@ export function CVGeneral() {
         <div className="cv-job">
           <div className="cv-job-meta">
             <h3>Bolívar Pide</h3>
-            <span>2025 — Presente · Beta</span>
+            <span>Ago 2026 — Presente · Beta</span>
           </div>
           <p className="cv-job-role">Full Stack · Product</p>
           <ul>

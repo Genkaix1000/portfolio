@@ -21,7 +21,7 @@ export function HeroStage() {
           <a href="#proyectos">
             {t.hero.projects} <span>↓</span>
           </a>
-          <a href="mailto:matiasasin123@gmail.com">
+          <a href="mailto:matiasasin123@icloud.com">
             {t.hero.contact} <span>↗</span>
           </a>
         </div>

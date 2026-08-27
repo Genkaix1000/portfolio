@@ -137,6 +137,142 @@
   text-decoration-color: var(--cv-accent);
 }
 
+/* Adaptados: color PDF (SQL / data) */
+.cv-page-adaptado {
+  --cv-ink: #0f1c24;
+  --cv-accent: #1a6b7a;
+  --cv-accent-soft: #c5dde3;
+  --cv-paper: #f3f7f8;
+  --cv-muted: #4a5c64;
+  --cv-chip: #e4f0f3;
+  background: var(--cv-paper);
+  color: var(--cv-ink);
+  border-color: var(--cv-ink);
+  box-shadow: 6px 6px 0 var(--cv-accent);
+}
+
+.cv-page-adaptado .cv-header {
+  border-bottom-color: var(--cv-accent);
+}
+
+.cv-page-adaptado .cv-photo {
+  border-color: var(--cv-ink);
+  box-shadow: 3px 3px 0 var(--cv-accent);
+  background: var(--cv-accent-soft);
+}
+
+.cv-page-adaptado .cv-photo img {
+  filter: none;
+}
+
+.cv-page-adaptado .cv-role,
+.cv-page-adaptado .cv-job-role {
+  color: var(--cv-accent);
+}
+
+.cv-page-adaptado .cv-block h2,
+.cv-page-adaptado .cv-split h2 {
+  color: var(--cv-ink);
+  border-bottom-color: var(--cv-accent);
+}
+
+.cv-page-adaptado .cv-job + .cv-job {
+  border-top-color: color-mix(in srgb, var(--cv-accent) 30%, #e4e4de);
+}
+
+.cv-page-adaptado .cv-job-meta span,
+.cv-page-adaptado .cv-edu span {
+  color: var(--cv-muted);
+}
+
+.cv-page-adaptado .cv-contact a {
+  color: var(--cv-ink);
+  text-decoration-color: var(--cv-accent);
+}
+
+.cv-page-adaptado .cv-chips li {
+  border-color: var(--cv-accent);
+  background: var(--cv-chip);
+  color: var(--cv-ink);
+}
+
+/* Compact one-page Adaptados — tight spacing only, keep full copy */
+.cv-page-adaptado {
+  padding: 11mm 11mm 9mm;
+}
+
+.cv-page-adaptado .cv-header {
+  margin-bottom: 11px;
+  padding-bottom: 9px;
+  gap: 14px;
+}
+
+.cv-page-adaptado .cv-photo {
+  width: 68px;
+  height: 68px;
+}
+
+.cv-page-adaptado .cv-block {
+  margin-bottom: 11px;
+}
+
+.cv-page-adaptado .cv-block h2,
+.cv-page-adaptado .cv-split h2 {
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+  font-size: 10.5px;
+}
+
+.cv-page-adaptado .cv-block > p {
+  font-size: 12px;
+  line-height: 1.38;
+}
+
+.cv-page-adaptado .cv-job + .cv-job {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.cv-page-adaptado .cv-job-role {
+  margin: 2px 0 4px;
+  font-size: 11px;
+}
+
+.cv-page-adaptado .cv-job ul {
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.cv-page-adaptado .cv-job li + li {
+  margin-top: 2px;
+}
+
+.cv-page-adaptado .cv-split {
+  gap: 16px;
+  margin-bottom: 11px;
+}
+
+.cv-page-adaptado .cv-chips {
+  gap: 5px;
+}
+
+.cv-page-adaptado .cv-chips li {
+  padding: 3px 7px;
+  font-size: 9.5px;
+}
+
+.cv-page-adaptado .cv-edu + .cv-edu {
+  margin-top: 6px;
+}
+
+.cv-page-adaptado .cv-edu strong {
+  font-size: 12px;
+}
+
+.cv-page-adaptado .cv-edu span {
+  font-size: 11px;
+}
+
 .cv-header-studio {
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 14px;
@@ -319,41 +455,51 @@
 .cv-page-game .cv-edu strong { font-size: 11.5px; margin-bottom: 1px; }
 .cv-page-game .cv-edu span { font-size: 10.5px; }
 
-/* Studio IT: fill one A4 page without looking sparse */
-.cv-page-studio .cv-block { margin-bottom: 9px; }
+/* Studio IT: breathe on one A4 — full-width skills + edu, not a cramped split */
+.cv-page-studio {
+  padding: 11mm 12mm 10mm;
+}
+.cv-page-studio .cv-block { margin-bottom: 12px; }
 .cv-page-studio .cv-block h2 {
-  margin-bottom: 4px;
-  padding-bottom: 3px;
-  font-size: 10.5px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  font-size: 11px;
 }
 .cv-page-studio .cv-block > p {
-  font-size: 11.5px;
-  line-height: 1.35;
+  font-size: 12px;
+  line-height: 1.45;
 }
 .cv-page-studio .cv-job + .cv-job {
-  margin-top: 7px;
-  padding-top: 7px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
-.cv-page-studio .cv-job-meta h3 { font-size: 13px; }
+.cv-page-studio .cv-job-meta h3 { font-size: 13.5px; }
 .cv-page-studio .cv-job-role {
-  margin: 2px 0 3px;
-  font-size: 11px;
+  margin: 3px 0 5px;
+  font-size: 11.5px;
 }
 .cv-page-studio .cv-job ul {
-  font-size: 11px;
-  line-height: 1.32;
-  padding-left: 15px;
+  font-size: 11.5px;
+  line-height: 1.42;
+  padding-left: 16px;
 }
-.cv-page-studio .cv-job li + li { margin-top: 2px; }
-.cv-page-studio .cv-split-game { gap: 16px; margin-top: 0; }
-.cv-page-studio .cv-skills-grid { gap: 10px; }
-.cv-page-studio .cv-skills-label { margin-bottom: 4px; font-size: 9.5px; }
+.cv-page-studio .cv-job li + li { margin-top: 4px; }
+.cv-page-studio .cv-skills-grid-studio {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.cv-page-studio .cv-skills-label { margin-bottom: 5px; font-size: 10px; }
 .cv-page-studio .cv-skills-grid ul {
-  font-size: 11px;
-  line-height: 1.32;
-  padding-left: 13px;
+  font-size: 11.5px;
+  line-height: 1.4;
+  padding-left: 14px;
 }
-.cv-page-studio .cv-edu + .cv-edu { margin-top: 7px; }
+.cv-page-studio .cv-edu-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.cv-page-studio .cv-edu-row .cv-edu + .cv-edu { margin-top: 0; }
 .cv-page-studio .cv-edu strong { font-size: 12px; margin-bottom: 2px; }
 .cv-page-studio .cv-edu span { font-size: 11px; }
 
@@ -502,6 +648,8 @@
     text-align: left;
   }
   .cv-skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .cv-page-studio .cv-skills-grid-studio,
+  .cv-page-studio .cv-edu-row { grid-template-columns: 1fr; }
   .cv-contact { justify-items: start; text-align: left; }
   .cv-job-meta { flex-direction: column; gap: 4px; }
 }
@@ -533,11 +681,13 @@
   }
 
   .cv-page-game,
-  .cv-page-studio {
+  .cv-page-studio,
+  .cv-page-adaptado {
     padding: 0 !important;
   }
 
-  .cv-page-studio {
+  .cv-page-studio,
+  .cv-page-adaptado {
     background: #fff !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -566,6 +716,93 @@
     border-bottom-color: #6f8f7c !important;
   }
 
+  .cv-page-adaptado .cv-header {
+    border-bottom-color: #1a6b7a !important;
+  }
+
+  .cv-page-adaptado .cv-photo {
+    box-shadow: 2px 2px 0 #1a6b7a !important;
+    background: #c5dde3 !important;
+  }
+
+  .cv-page-adaptado .cv-photo img {
+    filter: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-page-adaptado .cv-role,
+  .cv-page-adaptado .cv-job-role {
+    color: #1a6b7a !important;
+  }
+
+  .cv-page-adaptado .cv-block h2,
+  .cv-page-adaptado .cv-split h2 {
+    border-bottom-color: #1a6b7a !important;
+  }
+
+  .cv-page-adaptado .cv-chips li {
+    border-color: #1a6b7a !important;
+    background: #e4f0f3 !important;
+    color: #0f1c24 !important;
+  }
+
+  .cv-page-adaptado .cv-contact a {
+    text-decoration: underline;
+    text-decoration-color: #1a6b7a;
+  }
+
+  .cv-page-adaptado .cv-header {
+    margin-bottom: 9px !important;
+    padding-bottom: 7px !important;
+  }
+
+  .cv-page-adaptado .cv-photo {
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  .cv-page-adaptado .cv-block {
+    margin-bottom: 9px !important;
+  }
+
+  .cv-page-adaptado .cv-block > p {
+    font-size: 11.5px !important;
+    line-height: 1.34 !important;
+  }
+
+  .cv-page-adaptado .cv-job + .cv-job {
+    margin-top: 7px !important;
+    padding-top: 7px !important;
+  }
+
+  .cv-page-adaptado .cv-job ul {
+    font-size: 11px !important;
+    line-height: 1.32 !important;
+  }
+
+  .cv-page-adaptado .cv-job-role {
+    font-size: 10.5px !important;
+    margin: 2px 0 3px !important;
+  }
+
+  .cv-page-adaptado .cv-chips li {
+    padding: 3px 6px !important;
+    font-size: 9px !important;
+  }
+
+  .cv-page-adaptado .cv-edu + .cv-edu {
+    margin-top: 5px !important;
+  }
+
+  .cv-page-adaptado .cv-edu strong {
+    font-size: 11.5px !important;
+  }
+
+  .cv-page-adaptado .cv-edu span {
+    font-size: 10.5px !important;
+  }
+
   .cv-page-game .cv-header-game {
     gap: 10px;
     padding-bottom: 8px;
@@ -573,32 +810,33 @@
   }
 
   .cv-page-studio .cv-header-studio {
-    grid-template-columns: 68px minmax(0, 1fr);
-    gap: 12px;
-    padding-bottom: 7px;
-    margin-bottom: 7px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .cv-page-studio .cv-header-top {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    gap: 12px;
+    gap: 14px;
   }
 
   .cv-page-studio .cv-header-studio .cv-photo {
-    width: 68px;
-    height: 68px;
+    width: 72px;
+    height: 72px;
   }
 
-  .cv-page-studio .cv-header-studio h1 { font-size: 26px; }
-  .cv-page-studio .cv-role { font-size: 10.5px; }
-  .cv-page-studio .cv-tagline { font-size: 10.5px; }
+  .cv-page-studio .cv-header-studio h1 { font-size: 28px; }
+  .cv-page-studio .cv-role { font-size: 11.5px; }
+  .cv-page-studio .cv-tagline { font-size: 11.5px; line-height: 1.35; }
   .cv-page-studio .cv-contact {
     max-width: 38%;
     align-items: flex-end !important;
     text-align: right !important;
-    font-size: 10px;
-    gap: 1px;
+    font-size: 11px;
+    gap: 2px;
+    line-height: 1.35;
   }
 
   .cv-page-game .cv-photo {
@@ -631,34 +869,33 @@
   .cv-page-game .cv-edu strong { font-size: 11px; }
   .cv-page-game .cv-edu span { font-size: 10px; }
 
-  .cv-page-studio .cv-block { margin-bottom: 7px; }
-  .cv-page-studio .cv-block h2 { font-size: 10px; margin-bottom: 3px; }
+  .cv-page-studio .cv-block { margin-bottom: 12px; }
+  .cv-page-studio .cv-block h2 { font-size: 11.5px; margin-bottom: 6px; padding-bottom: 4px; }
   .cv-page-studio .cv-block > p {
-    font-size: 11px;
-    line-height: 1.32;
+    font-size: 12.5px;
+    line-height: 1.48;
   }
-  .cv-page-studio .cv-job + .cv-job { margin-top: 5px; padding-top: 5px; }
-  .cv-page-studio .cv-job-meta h3 { font-size: 12px; }
-  .cv-page-studio .cv-job-role { font-size: 10.5px; margin: 1px 0 2px; }
+  .cv-page-studio .cv-job + .cv-job { margin-top: 11px; padding-top: 11px; }
+  .cv-page-studio .cv-job-meta h3 { font-size: 14px; }
+  .cv-page-studio .cv-job-role { font-size: 12px; margin: 3px 0 5px; }
   .cv-page-studio .cv-job ul {
-    font-size: 10.5px;
-    line-height: 1.28;
+    font-size: 12px;
+    line-height: 1.45;
+    padding-left: 16px;
+  }
+  .cv-page-studio .cv-job li + li { margin-top: 4px; }
+  .cv-page-studio .cv-skills-grid-studio { gap: 18px; }
+  .cv-page-studio .cv-skills-label { font-size: 10.5px; margin-bottom: 5px; }
+  .cv-page-studio .cv-skills-grid ul {
+    font-size: 12px;
+    line-height: 1.42;
     padding-left: 14px;
   }
-  .cv-page-studio .cv-job li + li { margin-top: 1px; }
-  .cv-page-studio .cv-split-game { gap: 14px; }
-  .cv-page-studio .cv-skills-grid { gap: 8px; }
-  .cv-page-studio .cv-skills-label { font-size: 9px; margin-bottom: 3px; }
-  .cv-page-studio .cv-skills-grid ul {
-    font-size: 10px;
-    line-height: 1.28;
-    padding-left: 12px;
-  }
-  .cv-page-studio .cv-edu + .cv-edu { margin-top: 5px; }
-  .cv-page-studio .cv-edu strong { font-size: 11px; }
-  .cv-page-studio .cv-edu span { font-size: 10px; }
+  .cv-page-studio .cv-edu-row { gap: 16px; }
+  .cv-page-studio .cv-edu strong { font-size: 12.5px; }
+  .cv-page-studio .cv-edu span { font-size: 11.5px; line-height: 1.4; }
 
-  /* Game Presenter keeps B&W photo; Studio is color */
+  /* Game Presenter keeps B&W photo; Studio / Adaptados are color */
   .cv-page-game:not(.cv-page-studio) .cv-photo img {
     filter: grayscale(1) contrast(1.15) !important;
   }

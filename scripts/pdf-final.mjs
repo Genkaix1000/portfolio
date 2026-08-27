@@ -12,7 +12,7 @@ const cvData = {
     location: "Bolívar, BA, Argentina",
     age: "25 Years Old",
     phone: "+54 9 11 70623866",
-    email: "matiasasin123@gmail.com",
+    email: "matiasasin123@icloud.com",
     about: "Motivated and adaptable professional from Argentina with experience in fast paced customer service environments. Strong communication skills, positive attitude, and the ability to work confidently under pressure. Currently looking for an opportunity to grow professionally in igaming, and be part of an international team.",
     experience: [
         {
