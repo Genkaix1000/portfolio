@@ -45,7 +45,7 @@ export function CVGamePresenter() {
             <h3>Software Developer & Project Consultant</h3>
             <span>Ongoing</span>
           </div>
-          <p className="cv-job-role">Cocktrail / miBoliche · BolivarAPP</p>
+          <p className="cv-job-role">miBoliche · Pedilo · ARBOS</p>
           <ul>
             <li>
               Operate and support live nightlife systems in high-traffic venues — clear

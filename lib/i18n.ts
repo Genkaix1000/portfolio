@@ -84,7 +84,7 @@ const es: Dict = {
     titleSub: "& DATA SCIENTIST",
     statement: "Sistemas claros para problemas que no lo son.",
     context:
-      "Full stack con criterio de datos, seguridad y operación real. miBoliche en Bosko desde julio; Bolívar Pide en beta. Busco un rol full-time.",
+      "Full stack con criterio de datos, seguridad y operación real. miBoliche en Bosko desde julio, ARBOS en producción y Pedilo en beta. Busco un rol full-time.",
     projects: "PROYECTOS",
     contact: "CONTACTAR",
     photoAlt: "Matías Asin",
@@ -96,7 +96,7 @@ const es: Dict = {
     p2Before: "En ",
     p2Mid: " (Bosko) llevé el proyecto de punta a punta: código, operación, entrenamiento al staff, cobros con Mercado Pago Checkout Pro y soporte en la noche. Tras dos pruebas exitosas, el sistema opera sin incidentes desde julio. Con ",
     p2After:
-      " aplico la misma metodología; el producto sigue en beta y aún no tiene fecha de salida.",
+      " (antes Bolívar Pide) aplico la misma metodología: delivery local con panel de negocio en tiempo real y pedidos por WhatsApp, todavía en beta. En paralelo puse en producción ARBOS, una tienda online de perfumes con su dashboard de gestión, y tengo en desarrollo una ticketera con QR, un portal inmobiliario y un punto de venta.",
     p3Before: "También documenté un caso de ",
     p3Mid: " en Actual Online: un hallazgo puntual en la superficie pública, contacto con la empresa y auditoría con autorización — no lo ofrezco como servicio genérico, sino como evidencia de criterio frente a sistemas reales. Antes del software trabajé en operación logística en supermercado; esa experiencia me ayuda a diseñar para el piso, no solo para la demo. Busco un rol full-time; también considero freelance cuando el proyecto lo justifica.",
     focusTitle: "Enfoque",
@@ -108,10 +108,10 @@ const es: Dict = {
     ],
     stackTitle: "Stack principal",
     stack: [
-      { label: "Frontend", text: "React · Next.js · Flutter" },
-      { label: "Backend", text: "TypeScript · Java · SQL · Postgres" },
-      { label: "Pagos", text: "Mercado Pago Checkout Pro" },
-      { label: "Data & Security", text: "Reporting · API audit · Pentest" },
+      { label: "Frontend", text: "React · Next.js · Tailwind · Flutter" },
+      { label: "Backend", text: "TypeScript · Supabase · Postgres · SQL · Java" },
+      { label: "Pagos", text: "Mercado Pago Checkout Pro · Webhooks" },
+      { label: "Testing & Security", text: "Playwright · Vitest · API audit · RLS" },
     ],
     eduTitle: "Educación & Certs",
     edu: [
@@ -161,17 +161,71 @@ const es: Dict = {
           "Sistema en operación en Bosko: carta por QR, barra en vivo, caja y cobros con Checkout Pro. El cliente pide desde el celu; barman y cajera ven el flujo en tiempo real.",
         image: "/projects/miboliche.jpg",
         href: "https://miboliche-landing.vercel.app",
-        repo: "https://github.com/Genkaix1000/Cocktrail",
       },
       {
-        name: "Bolívar Pide",
-        status: "BETA",
-        role: "Plataforma de delivery local",
-        stack: "Next.js · Postgres · PWA",
+        name: "ARBOS",
+        status: "EN PRODUCCIÓN",
+        role: "E-commerce de perfumes + dashboard de gestión",
+        stack: "Next.js 16 · Supabase · GSAP · Playwright",
         detail:
-          "Marketplace de tres caras (usuario, negocio, repartidor) para Bolívar. En fase beta, aún no salió al público.",
+          "Tienda online con catálogo, combos y bolsa, y un dashboard privado para stock, insumos, pedidos, ventas y gastos. Catálogo editable desde el panel.",
+        image: "/projects/arbos.jpg",
+        href: "https://www.arbos.ar",
+      },
+      {
+        name: "Pedilo",
+        status: "BETA",
+        role: "Plataforma de delivery local (ex Bolívar Pide)",
+        stack: "Next.js 16 · Supabase · Mercado Pago · WhatsApp · PWA",
+        detail:
+          "Delivery para Bolívar: app del consumidor, panel del negocio con comandera en tiempo real, cobros por comercio y bot de pedidos por WhatsApp con IA. En beta.",
         image: "/projects/bolivarpide.jpg",
-        repo: "https://github.com/Genkaix1000/bolivarpide",
+        href: "https://pedilo.net",
+      },
+      {
+        name: "Ticketera QR",
+        status: "EN DESARROLLO",
+        role: "Venta y validación de entradas",
+        stack: "Next.js · Supabase · Mercado Pago · Zod",
+        detail:
+          "Entradas para eventos y boliches: reserva atómica de stock sin sobreventa, webhook de pagos idempotente, QR firmado con HMAC y check-in atómico en portería.",
+        image: "/projects/ticketera.jpg",
+      },
+      {
+        name: "Bolívar Inmo",
+        status: "EN DESARROLLO",
+        role: "Portal inmobiliario de la ciudad",
+        stack: "Next.js 16 · MapLibre · Base UI · Supabase",
+        detail:
+          "Las propiedades en venta y alquiler de las inmobiliarias de Bolívar en un solo lugar, con búsqueda en mapa. Diseñado mobile primero.",
+        image: "/projects/inmo.jpg",
+      },
+      {
+        name: "VentaPro",
+        status: "EN DESARROLLO",
+        role: "POS y gestión para comercios",
+        stack: "React · Vite · TypeScript · Supabase",
+        detail:
+          "Punto de venta para kioscos y supermercados que corre local en la PC del comercio, con escaneo por cámara y consulta de datos desde el celular.",
+        image: "/projects/ventapro.jpg",
+      },
+      {
+        name: "Pedilo Market",
+        status: "DEMO",
+        role: "Marketplace con pujas en vivo",
+        stack: "Next.js 16 · React 19 · Tailwind v4",
+        detail:
+          "Marketplace por localidades con avisos y salas de puja en vivo. Demo web; el objetivo de producto es una app nativa.",
+        image: "/projects/market.jpg",
+      },
+      {
+        name: "Mora",
+        status: "DEMO",
+        role: "Gestión de mora y cobranza municipal",
+        stack: "Next.js · TypeScript · SDD",
+        detail:
+          "SaaS para municipios: panel de administración y portal del vecino para regularizar deuda. Demo visual con datos sintéticos.",
+        image: "/projects/mora.jpg",
       },
       {
         name: "Auditoría Actual Online",
@@ -204,7 +258,7 @@ const en: Dict = {
     titleSub: "& DATA SCIENTIST",
     statement: "Clear systems for problems that aren't.",
     context:
-      "Full-stack with data, security, and real-world ops. miBoliche live at Bosko since July; Bolívar Pide in beta. Open to full-time roles.",
+      "Full-stack with data, security, and real-world ops. miBoliche live at Bosko since July, ARBOS in production, and Pedilo in beta. Open to full-time roles.",
     projects: "PROJECTS",
     contact: "CONTACT",
     photoAlt: "Matías Asin",
@@ -216,7 +270,7 @@ const en: Dict = {
     p2Before: "On ",
     p2Mid: " (Bosko) I owned the project end to end: code, operations, staff training, Mercado Pago Checkout Pro payments, and overnight support. After two successful pilots, the system has been running without incidents since July. With ",
     p2After:
-      " I apply the same method; the product is still in beta with no public launch date yet.",
+      " (formerly Bolívar Pide) I apply the same method: local delivery with a real-time merchant panel and WhatsApp ordering, still in beta. Alongside it I shipped ARBOS, an online perfume store with its own management dashboard, and I have a QR ticketing system, a real-estate portal, and a point of sale in development.",
     p3Before: "I also documented a ",
     p3Mid: " case on Actual Online: a finding on a public surface, contact with the company, and an authorized audit — not offered as a generic service, but as evidence of judgment against real systems. Before software I worked in supermarket logistics; that experience helps me design for the floor, not just the demo. I'm looking for a full-time role; freelance is also welcome when the project fits.",
     focusTitle: "Approach",
@@ -228,10 +282,10 @@ const en: Dict = {
     ],
     stackTitle: "Main stack",
     stack: [
-      { label: "Frontend", text: "React · Next.js · Flutter" },
-      { label: "Backend", text: "TypeScript · Java · SQL · Postgres" },
-      { label: "Payments", text: "Mercado Pago Checkout Pro" },
-      { label: "Data & Security", text: "Reporting · API audit · Pentest" },
+      { label: "Frontend", text: "React · Next.js · Tailwind · Flutter" },
+      { label: "Backend", text: "TypeScript · Supabase · Postgres · SQL · Java" },
+      { label: "Payments", text: "Mercado Pago Checkout Pro · Webhooks" },
+      { label: "Testing & Security", text: "Playwright · Vitest · API audit · RLS" },
     ],
     eduTitle: "Education & Certs",
     edu: [
@@ -281,17 +335,71 @@ const en: Dict = {
           "Live at Bosko: QR menu, real-time bar queue, cash desk, and Checkout Pro payments. Guests order from their phones; bartender and cashier see the flow live.",
         image: "/projects/miboliche.jpg",
         href: "https://miboliche-landing.vercel.app",
-        repo: "https://github.com/Genkaix1000/Cocktrail",
       },
       {
-        name: "Bolívar Pide",
-        status: "BETA",
-        role: "Local delivery platform",
-        stack: "Next.js · Postgres · PWA",
+        name: "ARBOS",
+        status: "IN PRODUCTION",
+        role: "Perfume e-commerce + management dashboard",
+        stack: "Next.js 16 · Supabase · GSAP · Playwright",
         detail:
-          "Three-sided marketplace (user, business, courier) for Bolívar. Still in beta; not public yet.",
+          "Online store with catalog, bundles, and cart, plus a private dashboard for stock, supplies, orders, sales, and expenses. The catalog is editable from the panel.",
+        image: "/projects/arbos.jpg",
+        href: "https://www.arbos.ar",
+      },
+      {
+        name: "Pedilo",
+        status: "BETA",
+        role: "Local delivery platform (formerly Bolívar Pide)",
+        stack: "Next.js 16 · Supabase · Mercado Pago · WhatsApp · PWA",
+        detail:
+          "Delivery for Bolívar: consumer app, merchant panel with a real-time order board, per-merchant payments, and an AI WhatsApp ordering bot. In beta.",
         image: "/projects/bolivarpide.jpg",
-        repo: "https://github.com/Genkaix1000/bolivarpide",
+        href: "https://pedilo.net",
+      },
+      {
+        name: "Ticketera QR",
+        status: "IN DEVELOPMENT",
+        role: "Ticket sales and validation",
+        stack: "Next.js · Supabase · Mercado Pago · Zod",
+        detail:
+          "Tickets for events and nightclubs: atomic stock reservation with no overselling, idempotent payment webhook, HMAC-signed QR codes, and atomic check-in at the door.",
+        image: "/projects/ticketera.jpg",
+      },
+      {
+        name: "Bolívar Inmo",
+        status: "IN DEVELOPMENT",
+        role: "City real-estate portal",
+        stack: "Next.js 16 · MapLibre · Base UI · Supabase",
+        detail:
+          "Every property for sale or rent from the city's agencies in one place, with map search. Designed mobile first.",
+        image: "/projects/inmo.jpg",
+      },
+      {
+        name: "VentaPro",
+        status: "IN DEVELOPMENT",
+        role: "POS and management for shops",
+        stack: "React · Vite · TypeScript · Supabase",
+        detail:
+          "Point of sale for kiosks and supermarkets that runs locally on the shop's PC, with camera barcode scanning and data lookup from a phone.",
+        image: "/projects/ventapro.jpg",
+      },
+      {
+        name: "Pedilo Market",
+        status: "DEMO",
+        role: "Marketplace with live bidding",
+        stack: "Next.js 16 · React 19 · Tailwind v4",
+        detail:
+          "Location-based marketplace with listings and live bidding rooms. Web demo; the product goal is a native app.",
+        image: "/projects/market.jpg",
+      },
+      {
+        name: "Mora",
+        status: "DEMO",
+        role: "Municipal debt and collections management",
+        stack: "Next.js · TypeScript · SDD",
+        detail:
+          "SaaS for municipalities: an admin panel and a resident portal for settling debt. Visual demo with synthetic data.",
+        image: "/projects/mora.jpg",
       },
       {
         name: "Actual Online Audit",

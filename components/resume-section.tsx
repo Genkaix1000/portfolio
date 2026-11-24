@@ -17,7 +17,7 @@ export function ResumeSection() {
             {t.resume.p2Before}
             <strong>miBoliche</strong>
             {t.resume.p2Mid}
-            <strong>Bolívar Pide</strong>
+            <strong>Pedilo</strong>
             {t.resume.p2After}
           </p>
           <p>

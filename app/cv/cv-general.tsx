@@ -68,16 +68,19 @@ export function CVGeneral() {
 
         <div className="cv-job">
           <div className="cv-job-meta">
-            <h3>Bolívar Pide</h3>
-            <span>Ago 2026 — Presente · Beta</span>
+            <h3>ARBOS · Pedilo</h3>
+            <span>Ago 2026 — Presente</span>
           </div>
           <p className="cv-job-role">Full Stack · Product</p>
           <ul>
             <li>
-              Plataforma de delivery local (usuario, negocio, repartidor) con Next.js,
-              Postgres y PWA.
+              ARBOS (en producción): e-commerce de perfumes con dashboard de stock,
+              pedidos y ventas. Next.js y Supabase.
             </li>
-            <li>Misma metodología punta a punta; producto aún en fase beta.</li>
+            <li>
+              Pedilo, ex Bolívar Pide (beta): delivery local con panel de negocio en
+              tiempo real, Mercado Pago y pedidos por WhatsApp.
+            </li>
           </ul>
         </div>
 
@@ -118,7 +121,7 @@ export function CVGeneral() {
             <li>Next.js / React</li>
             <li>TypeScript</li>
             <li>Java</li>
-            <li>SQL / Postgres</li>
+            <li>Supabase / Postgres / SQL</li>
             <li>Flutter</li>
             <li>Mercado Pago Checkout Pro</li>
             <li>API security / pentest</li>

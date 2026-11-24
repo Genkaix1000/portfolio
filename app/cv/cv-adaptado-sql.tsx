@@ -74,7 +74,7 @@ export function CVAdaptadoSql() {
 
         <div className="cv-job">
           <div className="cv-job-meta">
-            <h3>Bolívar Pide</h3>
+            <h3>Pedilo (ex Bolívar Pide)</h3>
             <span>Ago 2026 — Presente · Beta</span>
           </div>
           <p className="cv-job-role">Análisis funcional · historias &amp; pruebas</p>

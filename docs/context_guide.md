@@ -26,7 +26,7 @@ Este archivo está preparado para que cualquier agente de IA, script o evaluador
   * **Red Wi-Fi Segmentada:** Creación de 2 subredes (operativa interna para terminales/impresoras vs pública para clientes) y ajuste de Access Points para erradicar microcortes en el salón.
   * **Hardware de Piso:** Configuración de impresoras térmicas (USB/Bluetooth), tablets de comanda y resolución de incidencias en caliente durante la noche.
 
-### 2. Bolívar Pide (SaaS Delivery Local / `delivery`)
+### 2. Pedilo, ex Bolívar Pide (SaaS Delivery Local / `delivery`)
 * **Período:** Agosto 2026 — Presente (Fase Beta / En desarrollo activo)
 * **Stack:** Next.js 16 (App Router) + React 19 + TypeScript + Supabase (PostgreSQL, Auth, Storage, Realtime) + Tailwind CSS v4 + Zod + PWA.
 * **Enfoque Arquitectónico (Business-First):**
@@ -64,9 +64,9 @@ Este archivo está preparado para que cualquier agente de IA, script o evaluador
 
 | Perfil | Foco del Mensaje | Proyectos a Priorizar |
 | :--- | :--- | :--- |
-| **Full Stack / Software Engineer** | Arquitectura punta a punta, Next.js, TypeScript, SSE, Mercado Pago, Postgres/Supabase, RLS, seguridad. | miBoliche, Bolívar Pide, Auditoría de Seguridad |
+| **Full Stack / Software Engineer** | Arquitectura punta a punta, Next.js, TypeScript, SSE, Mercado Pago, Postgres/Supabase, RLS, seguridad. | miBoliche, ARBOS, Pedilo, Auditoría de Seguridad |
 | **Studio IT / Support Technician** | Redes (subnets, APs, DNS), Linux, hardware PC, soporte nocturno en caliente, impresoras térmicas. | Red de miBoliche en Bosko, Soporte en Supermercado, NeptunoHost |
-| **Desarrollo & Gestión (SQL / POS)** | Software de gestión operativa, procesos de negocio, flujos de caja y requerimientos de piso. | miBoliche (POS), Bolívar Pide, Retail Ops |
+| **Desarrollo & Gestión (SQL / POS)** | Software de gestión operativa, procesos de negocio, flujos de caja y requerimientos de piso. | miBoliche (POS), Pedilo, VentaPro, Retail Ops |
 | **Live Operations / Game Presenter** | Comunicación en vivo, manejo de crisis bajo presión, presencia en cámara, idiomas. | Operación Bosko, RRPP, Branding asn.psd |
 
 ---
@@ -84,3 +84,16 @@ Este archivo está preparado para que cualquier agente de IA, script o evaluador
   * Backend Java: [Certificado S3](https://egg-csv-bulk-certificates-prod.s3.amazonaws.com/certificates/63f787f294d117558b4fc81a-1756673724399.pdf)
   * Frontend React: [Certificado S3](https://egg-csv-bulk-certificates-prod.s3.amazonaws.com/certificates/63f787f294d117558b4fc81a-1756673624036.pdf)
 
+---
+
+## Actualización noviembre 2026
+
+El detalle completo de cada proyecto está en `experience.json`. Resumen de lo nuevo:
+
+- **Pedilo** es el nombre actual de Bolívar Pide (sitio: pedilo.net). Sigue en beta.
+- **ARBOS** (arbos.ar): e-commerce de perfumes con dashboard de gestión. En producción.
+- **Ticketera QR**: venta y validación de entradas con QR firmado. En desarrollo.
+- **Bolívar Inmo**: portal inmobiliario de la ciudad con mapa. En desarrollo.
+- **VentaPro**: POS y gestión para kioscos y supermercados. En desarrollo.
+- **Pedilo Market** y **Mora**: demos.
+- Los repos de miBoliche y Pedilo pasaron a la organización Bridge-Bolivar y son privados: no se linkean desde el sitio.

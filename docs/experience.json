@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "version": "1.0.0",
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-11-23",
   "personal": {
     "name": "Matías Asin",
     "age": 25,
@@ -13,7 +13,11 @@
         "remote": true,
         "onSiteCABA": true,
         "relocation": true,
-        "preferredRelocation": ["Malta", "España", "Internacional"]
+        "preferredRelocation": [
+          "Malta",
+          "España",
+          "Internacional"
+        ]
       }
     },
     "contact": {
@@ -22,7 +26,7 @@
       "phone": "+54 9 11 70623866",
       "github": "https://github.com/Genkaix1000",
       "linkedin": "https://www.linkedin.com/in/matias-asin-573320250/",
-      "portfolio": "https://github.com/Genkaix1000/portfolio",
+      "portfolio": "https://matiasasin.is-a.dev/",
       "instagramDesign": "https://www.instagram.com/matiasasin/"
     },
     "languages": [
@@ -45,7 +49,10 @@
       "Tailwind CSS",
       "PWA (Progressive Web Apps)",
       "HTML5 / CSS3",
-      "Flutter"
+      "Flutter",
+      "Tailwind CSS v4",
+      "Motion / GSAP",
+      "Vite"
     ],
     "backendAndRealtime": [
       "Node.js",
@@ -54,7 +61,9 @@
       "Server-Sent Events (SSE)",
       "REST APIs",
       "Webhooks",
-      "Mercado Pago Checkout Pro SDK / API"
+      "Mercado Pago Checkout Pro SDK / API",
+      "Supabase (Auth, Storage, Realtime, RLS)",
+      "WhatsApp Cloud API"
     ],
     "databasesAndData": [
       "PostgreSQL",
@@ -85,13 +94,23 @@
       "Adobe Photoshop",
       "Adobe Illustrator",
       "Identidad visual y branding",
-      "Diseño de interfaces (UI/UX) funcional para floor/operación"
+      "Diseño de interfaces (UI/UX) funcional para floor/operación",
+      "Figma",
+      "Penpot"
     ],
     "softSkills": [
       "Manejo de crisis y operación bajo alta presión",
       "Comunicación directa y resolución de conflictos",
       "Capacitación de staff operativo",
       "Pensamiento orientado a procesos de negocio y producto de punta a punta"
+    ],
+    "testingAndDelivery": [
+      "Playwright (end-to-end)",
+      "Vitest",
+      "Tests de base contra Supabase local",
+      "GitHub Actions (CI)",
+      "Docker",
+      "Vercel"
     ]
   },
   "workHistory": [
@@ -105,8 +124,7 @@
       "current": true,
       "status": "En producción estable",
       "links": {
-        "landing": "https://miboliche-landing.vercel.app",
-        "repository": "https://github.com/Genkaix1000/Cocktrail"
+        "landing": "https://miboliche-landing.vercel.app"
       },
       "roles": [
         "Full Stack & Product Engineer",
@@ -138,7 +156,7 @@
     },
     {
       "id": "bolivar-pide",
-      "title": "Bolívar Pide (delivery / bolivarpide)",
+      "title": "Pedilo (ex Bolívar Pide)",
       "companyOrVenue": "SaaS Propio / Local Delivery Marketplace",
       "location": "Bolívar, BA, Argentina",
       "startDate": "2026-08",
@@ -146,7 +164,7 @@
       "current": true,
       "status": "Fase Beta / En desarrollo activo",
       "links": {
-        "repository": "https://github.com/Genkaix1000/bolivarpide"
+        "site": "https://pedilo.net"
       },
       "roles": [
         "Full Stack & SaaS Product Engineer",
@@ -160,12 +178,13 @@
         "Supabase (PostgreSQL, Auth, Storage, Realtime)",
         "Row Level Security (RLS)",
         "Tailwind CSS v4",
-        "Framer Motion",
-        "Zod",
-        "PWA (Trusted Web Activity / TWA-ready)",
-        "Mercado Pago SDK"
+        "Mercado Pago Checkout Pro (OAuth por comercio)",
+        "WhatsApp Cloud API (bot de pedidos con IA)",
+        "PWA + Web Push",
+        "Turborepo / pnpm workspaces",
+        "Docker + Caddy"
       ],
-      "summary": "Plataforma SaaS y marketplace de delivery local de 3 caras (Negocio, Consumidor, Repartidor) construida con enfoque 'Business-First' y arquitectura serverless en Supabase + Next.js.",
+      "summary": "Plataforma de delivery local para San Carlos de Bolívar: app del consumidor, panel del negocio con comandera en tiempo real, cobros con Mercado Pago por comercio y bot de pedidos por WhatsApp.",
       "productArchitectureAndActors": {
         "approach": "Business-First Architecture: Se priorizó el desarrollo del panel operativo del local (/negocio/*) antes del marketplace de consumidores, asegurando que los negocios tengan control total de su carta, stock, comandera y horarios.",
         "threeFaces": {
@@ -180,7 +199,170 @@
         "Modelado de datos resiliente: manejo de montos en enteros (centavos ARS) para evitar errores de precisión de punto flotante y secuencias de pedidos independientes por comercio.",
         "Implementación de comandera en tiempo real con WebSockets (Supabase Realtime) para recepción y cambio de estados de comandas sin recarga de página.",
         "Estrategia de distribución PWA + TWA (Trusted Web Activity) permitiendo acceso web ultrarrápido sin fricción de descarga y publicación en Google Play Store con un único codebase.",
-        "Embudo de adquisición comercial automatizado: flujo de registro de locales (/negocio/registro -> tabla leads) y checklist de publicación progresiva según completitud de carta y horarios."
+        "Embudo de adquisición comercial automatizado: flujo de registro de locales (/negocio/registro -> tabla leads) y checklist de publicación progresiva según completitud de carta y horarios.",
+        "Cobros con Mercado Pago Checkout Pro con OAuth por comercio como canal único de pago.",
+        "Bot de pedidos por WhatsApp con IA y chat integrado en el panel del negocio.",
+        "Migración a monorepo (pnpm workspaces + Turborepo) con paquetes compartidos de dominio, contratos y base de datos.",
+        "Tests de base contra Supabase local (RPC, RLS, carreras) y end-to-end con Playwright, con CI."
+      ]
+    },
+    {
+      "id": "arbos",
+      "title": "ARBOS",
+      "companyOrVenue": "Tienda online de perfumes",
+      "location": "Argentina",
+      "startDate": "2026",
+      "endDate": null,
+      "current": true,
+      "status": "En producción",
+      "links": {
+        "site": "https://www.arbos.ar"
+      },
+      "roles": [
+        "Full Stack Engineer",
+        "E-commerce & Dashboard"
+      ],
+      "stack": [
+        "Next.js 16",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "GSAP",
+        "Playwright",
+        "Vercel"
+      ],
+      "summary": "E-commerce de perfumes con catálogo, ficha de producto, combos y bolsa, más un dashboard privado para stock, insumos, pedidos, ventas, gastos y catálogo.",
+      "keyAchievements": [
+        "Sitio público y dashboard de gestión en un mismo proyecto Next.js con Supabase.",
+        "Catálogo editable desde el dashboard; bolsa de compra persistida en el navegador.",
+        "Tests end-to-end con Playwright y documentación por pantallas y componentes."
+      ]
+    },
+    {
+      "id": "ticketera-qr",
+      "title": "Ticketera QR",
+      "companyOrVenue": "Producto propio (miBoliche)",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026",
+      "endDate": null,
+      "current": true,
+      "status": "En desarrollo",
+      "roles": [
+        "Full Stack Engineer"
+      ],
+      "stack": [
+        "Next.js",
+        "Supabase",
+        "Mercado Pago Checkout Pro",
+        "Zod",
+        "Zustand",
+        "Vitest",
+        "Playwright"
+      ],
+      "summary": "Venta y validación de entradas con código QR para eventos y boliches, con superficies para comprador, organizador y portería.",
+      "keyAchievements": [
+        "Reserva atómica de stock sin sobreventa y liberación automática de reservas vencidas.",
+        "Webhook de pagos idempotente: duplicados, reembolsos y contracargos quedan registrados.",
+        "QR firmado con HMAC en el servidor y check-in atómico en portería.",
+        "RLS por rol de evento, rate limiting en Postgres, CSRF y headers de seguridad."
+      ]
+    },
+    {
+      "id": "bolivar-inmo",
+      "title": "Bolívar Inmo",
+      "companyOrVenue": "Portal inmobiliario de San Carlos de Bolívar",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026",
+      "endDate": null,
+      "current": true,
+      "status": "En desarrollo",
+      "roles": [
+        "Full Stack Engineer",
+        "Product Designer"
+      ],
+      "stack": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "Base UI",
+        "MapLibre",
+        "Supabase"
+      ],
+      "summary": "Portal con las propiedades en venta y alquiler de las inmobiliarias de la ciudad en un solo lugar, con búsqueda en mapa. Mobile primero.",
+      "keyAchievements": [
+        "Flujo de publicación de avisos y panel de cuenta para inmobiliarias.",
+        "Tests de lógica con Vitest y end-to-end con Playwright en varios dispositivos; chequeo de contraste WCAG de la paleta."
+      ]
+    },
+    {
+      "id": "ventapro",
+      "title": "VentaPro",
+      "companyOrVenue": "Producto propio",
+      "location": "Argentina",
+      "startDate": "2026",
+      "endDate": null,
+      "current": true,
+      "status": "En desarrollo",
+      "roles": [
+        "Full Stack Engineer"
+      ],
+      "stack": [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Supabase",
+        "Vitest",
+        "Playwright"
+      ],
+      "summary": "Sistema de gestión y punto de venta para kioscos y supermercados que corre local en la PC del comercio, con consulta de datos desde el celular.",
+      "keyAchievements": [
+        "POS con escaneo de códigos de barras por cámara e importación de artículos por CSV.",
+        "Requisitos escritos como specs Gherkin y desarrollo guiado por tests."
+      ]
+    },
+    {
+      "id": "pedilo-market",
+      "title": "Pedilo Market",
+      "companyOrVenue": "Producto propio",
+      "location": "Bolívar, BA, Argentina",
+      "startDate": "2026",
+      "endDate": null,
+      "current": true,
+      "status": "Demo",
+      "roles": [
+        "Full Stack Engineer"
+      ],
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind CSS v4",
+        "TypeScript"
+      ],
+      "summary": "Marketplace por localidades con avisos y salas de puja en vivo. Demo web; el objetivo de producto es una app nativa.",
+      "keyAchievements": [
+        "Base web de demostración con home, detalle de aviso y sala de puja."
+      ]
+    },
+    {
+      "id": "mora",
+      "title": "Mora",
+      "companyOrVenue": "Producto propio",
+      "location": "Argentina",
+      "startDate": "2026-08",
+      "endDate": null,
+      "current": true,
+      "status": "Demo visual",
+      "roles": [
+        "Full Stack Engineer"
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Spec-Driven Development"
+      ],
+      "summary": "SaaS de gestión de mora y cobranza municipal: panel de administración y portal del vecino, con datos sintéticos.",
+      "keyAchievements": [
+        "Demo visual de admin y portal, con specs por fase."
       ]
     },
     {
@@ -295,9 +477,18 @@
       "intermediateTitleObtained": true,
       "intermediateTitleName": "Certificado Intermedio en Ciencia de Datos",
       "documents": [
-        { "name": "Constancia de Alumno Regular", "path": "/certs/constancia.pdf" },
-        { "name": "Título Intermedio", "path": "/certs/intermedio.pdf" },
-        { "name": "Certificado Analítico", "path": "/certs/analitico.pdf" }
+        {
+          "name": "Constancia de Alumno Regular",
+          "path": "/certs/constancia.pdf"
+        },
+        {
+          "name": "Título Intermedio",
+          "path": "/certs/intermedio.pdf"
+        },
+        {
+          "name": "Certificado Analítico",
+          "path": "/certs/analitico.pdf"
+        }
       ],
       "focus": [
         "Análisis de datos y modelado relacional",
@@ -312,7 +503,10 @@
       "status": "Certificado Oficial",
       "integratorId": "dev_24c65fb163bf11ea96500242ac130004",
       "documents": [
-        { "name": "Certificado Checkout Pro", "path": "/certs/checkout-pro.pdf" }
+        {
+          "name": "Certificado Checkout Pro",
+          "path": "/certs/checkout-pro.pdf"
+        }
       ],
       "technicalCriteria": [
         "Configuración avanzada del SDK de Mercado Pago (Node.js/TypeScript y MercadoPago.js v2 con Wallet Brick)",
@@ -359,30 +553,76 @@
     "fullstack_engineer": {
       "headline": "Software Engineer · Full Stack",
       "tagline": "Sistemas claros para problemas que no lo son · Criterio de datos, pagos y operación real",
-      "coreStack": ["Next.js", "React", "TypeScript", "Node.js", "Java", "SQL / Postgres", "Mercado Pago", "SSE"],
-      "highlightNarrative": "Desarrollador full stack enfocado en productos de punta a punta. Creador de miBoliche (POS y pedidos en vivo procesando ~1.000 tragos por noche en Bosko con Next.js, SSE y Mercado Pago) y Bolívar Pide (delivery multi-rol en beta). Formación en Ciencia de Datos (Teclab) y base de ciberseguridad.",
-      "leadProjects": ["miboliche-cocktrail", "bolivar-pide", "actual-security-disclosure"]
+      "coreStack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase / Postgres",
+        "Node.js",
+        "Java",
+        "Mercado Pago",
+        "SSE"
+      ],
+      "highlightNarrative": "Desarrollador full stack enfocado en productos de punta a punta, con base de diseño gráfico. Creador de miBoliche (POS y pedidos en vivo procesando ~1.000 tragos por noche en Bosko con Next.js, SSE y Mercado Pago), ARBOS (e-commerce de perfumes en producción) y Pedilo (delivery local en beta). Formación en Ciencia de Datos (Teclab) y base de ciberseguridad.",
+      "leadProjects": [
+        "miboliche-cocktrail",
+        "arbos",
+        "bolivar-pide",
+        "actual-security-disclosure"
+      ]
     },
     "studio_it_technician": {
       "headline": "Junior Studio IT Technician / Support Engineer",
       "tagline": "Hands-on IT support · live venue ops · Windows, networking & Linux",
-      "coreStack": ["Linux (Arch/Ubuntu)", "Subnets / Wi-Fi APs", "TCP/IP & LAN", "Hardware PC", "Printers/Tablets", "CCTV/NVR"],
+      "coreStack": [
+        "Linux (Arch/Ubuntu)",
+        "Subnets / Wi-Fi APs",
+        "TCP/IP & LAN",
+        "Hardware PC",
+        "Printers/Tablets",
+        "CCTV/NVR"
+      ],
       "highlightNarrative": "Técnico de soporte IT con experiencia práctica en entornos de alta exigencia en vivo. Responsable del despliegue de red y soporte de hardware en Bosko (segmentación de Wi-Fi, solución de microcortes, impresoras térmicas) y mantenimiento de PCs de facturación en retail. Disponible para relocalización internacional (Malta / Europa).",
-      "leadProjects": ["miboliche-cocktrail", "actual-supermercados-logistics", "neptunohost"]
+      "leadProjects": [
+        "miboliche-cocktrail",
+        "actual-supermercados-logistics",
+        "neptunohost"
+      ]
     },
     "it_sql_business_software": {
       "headline": "Joven Profesional IT · Desarrollo & Gestión de Software",
       "tagline": "Sistemas de gestión operativa (POS) · Procesos de negocio · SQL & Datos",
-      "coreStack": ["Java", "TypeScript", "SQL / Postgres", "Next.js", "Gestión de Requerimientos", "POS"],
+      "coreStack": [
+        "Java",
+        "TypeScript",
+        "SQL / Postgres",
+        "Next.js",
+        "Gestión de Requerimientos",
+        "POS"
+      ],
       "highlightNarrative": "Estudiante avanzado de Ciencia de Datos con sólida comprensión de procesos de negocio y experiencia implementando software de gestión operativo (POS, stock, cobros). Capacidad analítica para traducir necesidades operativas de piso en funcionalidades de software robustas. Abierto a aprender nuevas tecnologías y lenguajes corporativos.",
-      "leadProjects": ["miboliche-cocktrail", "bolivar-pide", "actual-supermercados-logistics"]
+      "leadProjects": [
+        "miboliche-cocktrail",
+        "bolivar-pide",
+        "actual-supermercados-logistics"
+      ]
     },
     "game_presenter_operations": {
       "headline": "Live Operations / Game Presenter",
       "tagline": "Live communication · composure under pressure · audience-ready presence",
-      "coreStack": ["Live Communication", "Crisis Management", "Public Relations", "Brand Design", "Team Training"],
+      "coreStack": [
+        "Live Communication",
+        "Crisis Management",
+        "Public Relations",
+        "Brand Design",
+        "Team Training"
+      ],
       "highlightNarrative": "Profesional de 25 años con amplia soltura en comunicación en vivo y manejo de situaciones críticas bajo presión. Experiencia capacitando equipos y coordinando operaciones en vivo en locales nocturnos y retail. Presencia enérgica, claridad de dicción y excelente trato interpersonal en español e inglés.",
-      "leadProjects": ["miboliche-cocktrail", "actual-supermercados-logistics", "freelance-design-rrpp"]
+      "leadProjects": [
+        "miboliche-cocktrail",
+        "actual-supermercados-logistics",
+        "freelance-design-rrpp"
+      ]
     }
   }
 }
